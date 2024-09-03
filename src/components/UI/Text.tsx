@@ -57,4 +57,6 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
   }
 );
 
+Text.displayName = "Text";
+
 export default Text;
