@@ -15,7 +15,7 @@ const button = cva(
     {
         variants:{
             variant:{
-                primary: ["bg-white text-black font-semibold text-[18px] hover:text-white hover:bg-[#1B1B1B] duration-500 border-2 border-white"]
+                primary: ["bg-white text-black font-semibold text-[16px] hover:text-white hover:bg-[#1B1B1B] duration-500 border-2 border-white"]
             },
             size:{
                 small: ["py-3", "px-3"],
