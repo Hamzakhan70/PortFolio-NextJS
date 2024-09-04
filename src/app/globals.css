@@ -25,3 +25,12 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 2.3s linear infinite;
+}

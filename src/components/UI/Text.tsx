@@ -8,11 +8,12 @@ interface Props {
   className?: string;
   as?: ComponentAs;
   onclick?: any;
+  Style?: React.CSSProperties;
 }
 
 const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
   (props, ref) => {
-    const { children, className, as, onclick } = props;
+    const { children, className, as, onclick, Style} = props;
     if (as === "h1") {
       return (
         <h1
@@ -22,6 +23,7 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
             className
           )}
           onClick={onclick}
+          style={Style}
         >
           {children}
         </h1>
