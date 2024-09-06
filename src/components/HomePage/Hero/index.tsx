@@ -89,7 +89,7 @@ const HomePageHero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-[70vh] relative mx-auto">
+    <div className="flex flex-col justify-center items-center h-[90vh] relative mx-auto">
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10" />
 
       {/* Heading Container */}
@@ -127,7 +127,7 @@ const HomePageHero = () => {
         that transform ideas into seamless and captivating experiences.
       </Text>
 
-      <div className="flex gap-4 items-center mt-4 ">
+      <div className="flex gap-4 items-center mt-9">
         <LinkButton href="/" className="text-[18px]">
           Resume
         </LinkButton>
