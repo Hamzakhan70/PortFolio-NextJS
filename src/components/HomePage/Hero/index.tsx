@@ -89,7 +89,7 @@ const HomePageHero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-[90vh] relative mx-auto">
+    <div className="flex flex-col justify-center items-center h-full min-h-[100vh] relative mx-auto">
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10" />
 
       {/* Heading Container */}
@@ -121,7 +121,7 @@ const HomePageHero = () => {
         </Text>
       </div>
 
-      <Text className="max-w-[700px] mt-6">
+      <Text className="max-w-[700px] text-[20px] mt-6 leading-[30px]">
         Explore a world where creativity meets technology. Crafted by a
         full-stack developer, this space showcases innovative digital solutions
         that transform ideas into seamless and captivating experiences.

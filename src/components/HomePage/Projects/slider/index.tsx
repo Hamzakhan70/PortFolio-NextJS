@@ -20,7 +20,7 @@ import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 
 export default function ProjectsSlider() {
   return (
-    <div className='mb-[100px]'>
+    <div className=''>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

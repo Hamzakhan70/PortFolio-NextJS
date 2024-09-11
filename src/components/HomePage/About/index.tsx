@@ -9,7 +9,7 @@ const HomeAbout: React.FC = () => {
   const [clientsCounter, setClientsCounter] = useState(false);
 
   return (
-    <div className="flex justify-center items-center h-[100vh]">
+    <div className="flex justify-center h-full min-h-[79vh] items-center">
       <div>
         <Text as="h1" className="text-center">
           About
