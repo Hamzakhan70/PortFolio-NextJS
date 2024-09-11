@@ -9,7 +9,7 @@ const HomeAbout: React.FC = () => {
   const [clientsCounter, setClientsCounter] = useState(false);
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center h-[100vh]">
       <div>
         <Text as="h1" className="text-center">
           About
@@ -17,18 +17,18 @@ const HomeAbout: React.FC = () => {
 
         <Text className="text-[20px] font-bold py-4">BIOGRAPHY</Text>
         <Text className="max-w-[1200px]">
-          Hello ! This is Faheem. I'm a full stack web developer with a passion
+          Hello ! This is Faheem. I&apos;m a full stack web developer with a passion
           for crafting stunning, functional, and user-centric digital journeys.
           With a solid 1-year journey in the field, I have always looking for
-          innovative ways to bring his clients' visions to life. <br /> <br />I
+          innovative ways to bring clients&apos; visions to life. <br /> <br />I
           believe that design is about more than just making things look pretty;
-          it’s about solving problems and creating intuitive, enjoyable
+          it&apos;s about solving problems and creating intuitive, enjoyable
           experiences for users. Whether crafting websites, managing technical
           aspects, or developing digital projects, I focus on delivering
           solutions that are well-designed, functional, and user-friendly.{" "}
           <br /> <br />
-          Excited about contributing his skills and enthusiasm, Ateeb is ready
-          to take on new challenges and bring fresh ideas to the next project.
+          Excited about contributing my skills and enthusiasm, I&apos;m ready
+          to take on new challenges and bring fresh ideas to the your project.
         </Text>
         <div className="flex justify-between items-center mt-6">
           <Text as="h1">
