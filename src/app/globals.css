@@ -32,7 +32,7 @@ body {
   }
 }
 .animate-spin {
-  animation: spin 2.3s linear infinite;
+  animation: spin 5s linear infinite;
 }
 @layer base {
   :root {
@@ -115,4 +115,14 @@ body {
 }
 .bg-white{
   background-color: #fff;
+}
+
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
 }
