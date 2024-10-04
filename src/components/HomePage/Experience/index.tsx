@@ -25,7 +25,7 @@ const Experience = () => {
       scrub: true,
       pin: headingRef.current,
       pinSpacing: false, 
-      markers: true, 
+      // markers: true, 
     });
   
     // Horizontal scroll animation starts after pinning the heading
@@ -44,7 +44,7 @@ const Experience = () => {
           end: "2000 bottom",
           scrub: 0.6,
           pin: true,
-          markers: true,
+          // markers: true,
           onEnter: () => setIsFixed(true),
           onLeave: () => setIsFixed(false),
           onEnterBack: () => setIsFixed(true),
@@ -63,7 +63,7 @@ const Experience = () => {
   return (
     <div className="w-full h-full min-h-[100vh] flex items-center justify-center">
       <div className="w-full h-full relative">
-        <div className="fixed top-[50%] -z-10 h-[100px] w-full skew-y-6 bg-dark/30"></div>
+        {/* <div className="static top-[50%] -z-10 h-[100px] w-full skew-y-6 bg-dark/30"></div> */}
 
         {/* Placeholder for heading to maintain layout */}
         <div className="h-[80px]"></div>
