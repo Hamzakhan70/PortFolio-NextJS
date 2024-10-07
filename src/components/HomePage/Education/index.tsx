@@ -29,7 +29,7 @@ const Education = () => {
             {/* left side div */}
             <div>
               <div className=" mb-[100px]">
-              <Text as="h2" className=" text-[30px] text-[#B8B9B9]">
+              <Text as="h2" className=" text-[30px] text-[#FFF]/90">
                 Bachelor of Computer Science (BSCS)
               </Text>
 
@@ -59,7 +59,7 @@ const Education = () => {
               </div>
 
               {/* intermediate div */}
-              <Text as="h2" className=" text-[30px] text-[#B8B9B9]">
+              <Text as="h2" className=" text-[30px] text-[#FFF]/90">
                   Intermediate in Sciences
                 </Text>
                 <Text className="text-[19px] font-semibold text-[#33BECF]">
