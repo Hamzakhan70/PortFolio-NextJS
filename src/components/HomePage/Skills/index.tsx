@@ -23,7 +23,7 @@ const [hoverSkill, sethoverSkill] = useState<number | null>(null)
     const skillsArray = [html, css, chakraui, tailwindcss, js, react, nextjs, reactQuery, Node, firebase, express]
     const skillsNameArray = ["HTML", "CSS", "Chakra UI", "Tailwind CSS", "JavaScript", "React", "Next JS", "React Query", "Node JS", "Firebase", "Express"]
   return (
-    <div className="w-full h-full min-h-[100vh] flex items-center justify-center">
+    <div className="w-full h-full min-h-[76vh] flex items-center justify-center">
       <div className="w-full h-full relative">
       <Text as="h1" className='text-center'>Development Skills</Text>
       <div className='w-full flex justify-center items-center mt-[100px]'>

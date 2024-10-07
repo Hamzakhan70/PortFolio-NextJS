@@ -6,7 +6,7 @@ import React from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import { GiCometSpark } from "react-icons/gi";
 import Text from "@/components/UI/Text";
-// import Button from "@/components/UI/Button";
+import Button from "@/components/UI/Button";
 import LinkButton from "@/components/UI/LinkButton";
 
 const HomePageHero = () => {
@@ -24,8 +24,11 @@ const HomePageHero = () => {
     delaySpeed: 1800,
     typeSpeed: 80,
     deleteSpeed: 70,
-
   })
+
+  const handleOpenPdf = ()=>{
+    window.open('/faheem-mern-stack.pdf')
+  }
 
   // useEffect(() => {
   //   if (
@@ -108,7 +111,7 @@ const HomePageHero = () => {
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10" />
 
       <Text
-          as="h1" className="w-full max-w-[700px] text-center">{text}</Text>
+          as="h1" className="w-full max-w-[700px] text-center leading-[65px]">{text}</Text>
 
       {/* Heading Container */}
       {/* <div className="relative h-[130px] w-full flex justify-center items-center">
@@ -146,11 +149,11 @@ const HomePageHero = () => {
       </Text>
 
       <div className="flex gap-4 items-center mt-9">
-        <LinkButton href="/" className="text-[18px]">
+        <Button onClick={handleOpenPdf} className="text-[18px]">
           Resume
-        </LinkButton>
+        </Button>
         <LinkButton
-          href="mailto:faheemulhassanaziz@gmail.com"
+          href="mailto:fahimjsdeveloper@gmail.com"
           className=" bg-transparent text-[20px] mt-2 px-0 py-0 hover:opacity-[0.7] underline border-none text-white hover:bg-transparent"
         >
           Contact

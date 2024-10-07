@@ -13,19 +13,19 @@ const Navbar = () => {
       <div className="w-full max-w-[1100px] flex justify-between items-center">
         <div>
           <LinkButton
-            href="/"
+            href="#home-hero"
             className=" bg-transparent border-none text-white hover:bg-transparent"
           >
             Home
           </LinkButton>
           <LinkButton
-            href="/about"
+            href="#about-section"
             className=" bg-transparent border-none text-white hover:bg-transparent"
           >
             About
           </LinkButton>
           <LinkButton
-            href="/contact"
+            href="mailto:fahimjsdeveloper@gmail.com"
             className=" bg-transparent border-none text-white hover:bg-transparent"
           >
             Contact
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
             <FaLinkedin className="text-[30px] text-white hover:mt-[-5px] duration-200" />
           </Link>
-          <Link href="mailto:faheemulhassanaziz@gmail.com">
+          <Link href="mailto:fahimjsdeveloper@gmail.com">
             <MdEmail className="text-[30px] text-white hover:mt-[-5px] duration-200" />
           </Link>
         </div>
