@@ -40,69 +40,29 @@ body {
   
 }
 
-
-/* .hero__header {
-  height: 100vh;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-} */
-
-/* .hero__header h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: var(--headlineBig);
-  color: var(--primaryTextColor);
+progress {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 15px;
+  border: none;
+  background: #161A1D;
+}
+progress::-webkit-progress-bar {
+  background: #161A1D;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #db38b5,#01b3e3,#25ce7b,#fdc741,#ff6b01,#fc4236);
+  background-attachment: fixed;
 }
 
-.hero__header h2 {
-  letter-spacing: var(--headlineSmall);
-  font-size: var(--headlineSmall);
-  text-transform: uppercase;
-  color: var(--primaryColor);
-} */
-
-.scroll-section-outer {
-  overflow: hidden;
-}
-
-.scroll-section-inner {
-  height: 100vh;
-  width: 200vw;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.scroll-section {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .scroll-section h3 {
-  color: var(--primaryTextColor);
-  letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
-  text-transform: uppercase;
-} */
-
-.footer {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer span {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: var(--headlineBig);
-  color: var(--primaryTextColor);
-}
 
 
 .box-shadow{
@@ -118,11 +78,67 @@ body {
 }
 
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: .5;
-  }
+
+
+.hero__header {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__header h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--headlineBig);
+  color: var(--primaryTextColor);
+}
+
+.hero__header h2 {
+  letter-spacing: var(--headlineSmall);
+  font-size: var(--headlineSmall);
+  text-transform: uppercase;
+  color: var(--primaryColor);
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+
+.footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: var(--headlineBig);
+  color: var(--primaryTextColor);
 }
