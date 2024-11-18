@@ -25,11 +25,11 @@ export default function Home() {
    <Experience />
    <Skills />
    <Education />
-   <div className="fixed bottom-9 right-0 z-50">
+   <div className="fixed bottom-9 right-0 z-50 mob:top-0">
   <div className="relative flex justify-center items-center">
-    <Image src={hiresvg} alt="hirevsg" className="animate-spin"></Image>
+    <Image src={hiresvg} alt="hirevsg" className="animate-spin mob:w-[130px] mob:h-[130px]"></Image>
     <div className="absolute w-full h-full top-0 left-0 flex justify-center items-center ">
-      <LinkButton href="mailto:fahimjsdeveloper@gmail.com" className="w-[80px] h-[80px] p-0 hover:text-white flex justify-center items-center text-[17px] rounded-full">
+      <LinkButton href="mailto:fahimjsdeveloper@gmail.com" className="w-[80px] h-[80px] mob:w-[50px] mob:h-[50px] p-0 hover:text-white flex justify-center items-center text-[17px] mob:text-[10px] rounded-full">
           Hire Me
       </LinkButton>
      

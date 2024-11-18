@@ -7,9 +7,9 @@ import ProjectsSlider from './slider'
 const Projects = () => {
   return (
 
-    <div className='w-full h-full min-h-[100vh] flex items-center justify-center'>
+    <div className='w-full h-full min-h-[100vh] flex items-center justify-center px-5'>
     <div className='w-full h-full'>
-        <Text as="h1" className='text-center'>Blueprints of Creativity</Text>
+        <Text as="h1" className='text-center mob:text-[32px] mob:leading-[38px]'>Blueprints of Creativity</Text>
         <ProjectsSlider />
     </div>
     </div>
