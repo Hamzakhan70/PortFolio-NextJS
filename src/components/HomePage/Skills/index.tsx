@@ -49,15 +49,18 @@ const Skills = () => {
   return (
     <div className="w-full h-full min-h-[76vh] flex items-center justify-center">
       <div className="w-full h-full relative">
-        <Text as="h1" className="text-center">
+        <Text
+          as="h1"
+          className="text-center mob:text-[32px] mob:leading-[38px]"
+        >
           Development Skills
         </Text>
         <div className="w-full flex justify-center items-center mt-[100px]">
-          <div className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px]">
+          <div className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px] mob:gap-10 mob:px-5">
             {skillsArray.map((skill, index) => (
               <div
                 key={index}
-                className="w-[96px] h-[96px] relative"
+                className="w-[96px] h-[96px] mob:w-[85px] mob:h-[85px] relative"
                 onMouseEnter={() => sethoverSkill(index)}
                 onMouseLeave={() => sethoverSkill(null)}
               >

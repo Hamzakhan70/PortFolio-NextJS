@@ -18,7 +18,7 @@ const HomeAbout: React.FC = () => {
           About
         </Text>
 
-        <Text className="text-[20px] mob:text-[15px] mob:leading-5 mob:text-center font-bold py-4">
+        <Text className="text-[20px] mob:text-[20px] mob:leading-5 mob:text-center font-bold py-4">
           BIOGRAPHY
         </Text>
         <Text className="max-w-[1200px] mob:text-center mob:text-[15px] mob:leading-5">

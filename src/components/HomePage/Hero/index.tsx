@@ -18,17 +18,17 @@ const HomePageHero = () => {
     words: [
       " Hey 👋! This is Faheem",
       " Lover of Full-Stack Craft ✨|",
-      "Turning your Ideas into Digital Reality 💡|"
+      "Turning your Ideas into Digital Reality 💡|",
     ],
     loop: true,
     delaySpeed: 1800,
     typeSpeed: 80,
     deleteSpeed: 70,
-  })
+  });
 
-  const handleOpenPdf = ()=>{
-    window.open('/faheem-mern-stack.pdf')
-  }
+  const handleOpenPdf = () => {
+    window.open("/faheem-mern-stack.pdf");
+  };
 
   // useEffect(() => {
   //   if (
@@ -111,7 +111,11 @@ const HomePageHero = () => {
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10 mob:hidden" />
 
       <Text
-          as="h1" className="w-full max-w-[700px] text-center leading-[65px] mob:text-[32px] text-3xl mob:leading-[38px]">{text}</Text>
+        as="h1"
+        className="w-full max-w-[700px] text-center leading-[65px] mob:text-[32px] mob:leading-[38px]"
+      >
+        {text}
+      </Text>
 
       {/* Heading Container */}
       {/* <div className="relative h-[130px] w-full flex justify-center items-center">

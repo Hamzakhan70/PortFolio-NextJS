@@ -43,31 +43,34 @@ const Experience = () => {
         });
 
       // Panel 1 animation (scale down)
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".panel1",
-          start: "top left",
-          end: "right left",
-          scrub: true,
-          // markers:true
-          containerAnimation: timeline,
-        },
-      }).to("#workCard1", {
-        scale: 0.5,
-        opacity: 0.5,
-      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".panel1",
+            start: "top left",
+            end: "right left",
+            scrub: true,
+            // markers:true
+            containerAnimation: timeline,
+          },
+        })
+        .to("#workCard1", {
+          scale: 0.5,
+          opacity: 0.5,
+        });
 
       // Panel 2 animation (enter and exit)
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".panel2",
-          start: "left right",
-          end: "right left",
-          scrub: true,
-          // markers:true
-          containerAnimation: timeline,
-        },
-      })
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".panel2",
+            start: "left right",
+            end: "right left",
+            scrub: true,
+            // markers:true
+            containerAnimation: timeline,
+          },
+        })
         .from("#workCard2", {
           scale: 0,
           opacity: 0,
@@ -119,8 +122,8 @@ const Experience = () => {
     };
 
     const ctx = gsap.context(() => {
-      firstCardAnimation(); 
-      horizontalScrollAnimation(); 
+      firstCardAnimation();
+      horizontalScrollAnimation();
     }, mainContainer);
 
     return () => ctx.revert();
@@ -129,7 +132,10 @@ const Experience = () => {
   return (
     <div ref={mainContainer} className="relative block h-[400vh] w-full">
       <div className="sticky top-0 h-[100vh] overflow-hidden">
-        <Text as="h1" className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold">
+        <Text
+          as="h1"
+          className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold"
+        >
           Experience
         </Text>
 
@@ -147,7 +153,10 @@ const Experience = () => {
 
         <div className="flex h-full w-full" ref={scrollContainerRef}>
           <div className="panel1 flex w-full shrink-0 items-center justify-center">
-            <div id="workCard1" className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6">
+            <div
+              id="workCard1"
+              className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+            >
               <Text className="text-[24px] font-semibold">
                 Junior Web Developer{" "}
                 <span className="text-[#33BECF]">
@@ -161,7 +170,10 @@ const Experience = () => {
           </div>
 
           <div className="panel2 flex w-full shrink-0 items-center justify-center">
-            <div id="workCard2" className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6">
+            <div
+              id="workCard2"
+              className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+            >
               <Text className="text-[24px] font-semibold">
                 Trainee Software Engineer{" "}
                 <span className="text-[#33BECF]">
@@ -173,8 +185,6 @@ const Experience = () => {
               </Text>
             </div>
           </div>
-
-     
         </div>
       </div>
     </div>
