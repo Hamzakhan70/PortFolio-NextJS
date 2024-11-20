@@ -107,7 +107,7 @@ const HomePageHero = () => {
   // }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-full min-h-[100vh] mob:min-h-max mob:my-[100px] relative mx-auto px-5">
+    <div className="flex flex-col justify-center items-center h-full min-h-[100vh] mob:min-h-fit mob:my-[100px] relative mx-auto px-5">
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10 mob:hidden" />
 
       <Text

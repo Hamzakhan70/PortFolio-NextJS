@@ -25,7 +25,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Education />
-      <div className="fixed bottom-9 right-0 z-50 mob:top-0 hidden">
+      <div className="fixed bottom-9 right-0 z-50 mob:top-0 mob:hidden">
         <div className="relative flex justify-center items-center">
           <Image
             src={hiresvg}

@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import gsap from "gsap";
 
@@ -13,6 +14,8 @@ import { GiCometSpark } from "react-icons/gi";
 import LinkButton from "../UI/LinkButton";
 import useDisclosure from "@/hooks/useDisclosure";
 import Drawer from "../UI/Drawer";
+
+import hiresvg from "../../../public/images/hire.svg";
 
 const Navbar = () => {
   const { onClose, onOpen, isOpen } = useDisclosure();
@@ -54,31 +57,56 @@ const Navbar = () => {
       <div className="hidden w-full xl:flex items-center justify-between ">
         {/* <GiCometSpark className="text-center  text-[40px] text-white " /> */}
 
-        <div className="  " onClick={onOpen}>
-          <button
-            // onClick={toggleMenu}
-            type="button"
-            className="inline-flex items-center w-10 h-10 justify-center text-sm  text-white rounded-lg  "
-            aria-controls="navbar-default"
-            aria-expanded={isOpen ? "true" : "false"}
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
+        <div className="flex items-center  w-full">
+          <div className="pl-4" onClick={onOpen}>
+            <button
+              // onClick={toggleMenu}
+              type="button"
+              className="inline-flex items-center w-10 h-10 justify-center text-sm  text-white rounded-lg  "
+              aria-controls="navbar-default"
+              aria-expanded={isOpen ? "true" : "false"}
             >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div className="fixed bottom-4 right-4 flex items-center justify-center overflow-hidden mob:absolute mob:bottom-auto mob:left-auto mob:right-0 mob:top-0 ">
+            <div className="relative flex h-auto w-[200px] items-center justify-center mob:w-[130px] ">
+              <Image src={hiresvg} alt="hire" className="animate-spin" />
+              <div className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-solid p-0 text-[16px] font-semibold text-light shadow-md  mob:h-[2.7rem] mob:w-[2.7rem] mob:text-[10px]">
+                <LinkButton
+                  href="mailto:fahimjsdeveloper@gmail.com"
+                  className="w-[80px] h-[80px] mob:w-[50px] mob:h-[50px] p-0 hover:text-white flex justify-center items-center text-[17px] mob:text-[10px] rounded-full"
+                >
+                  Hire Me
+                </LinkButton>
+              </div>
+
+              {/* <Link href="mailto:ateebasif9021@gmail.com"> */}
+              <LinkButton
+                href="mailto:fahimjsdeveloper@gmail.com"
+                className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-solid border-dark bg-dark p-0 text-[16px] font-semibold text-light shadow-md  dark:bg-light dark:text-dark  mob:h-[2.7rem] mob:w-[2.7rem] mob:text-[10px]"
+              >
+                Hire Me
+              </LinkButton>
+              {/* </Link> */}
+            </div>
+          </div>
         </div>
         <div className="relative z-40">
           <Drawer isOpen={isOpen} onClose={onClose}>
