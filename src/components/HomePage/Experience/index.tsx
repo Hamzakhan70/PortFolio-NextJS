@@ -43,31 +43,34 @@ const Experience = () => {
         });
 
       // Panel 1 animation (scale down)
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".panel1",
-          start: "top left",
-          end: "right left",
-          scrub: true,
-          // markers:true
-          containerAnimation: timeline,
-        },
-      }).to("#workCard1", {
-        scale: 0.5,
-        opacity: 0.5,
-      });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".panel1",
+            start: "top left",
+            end: "right left",
+            scrub: true,
+            // markers:true
+            containerAnimation: timeline,
+          },
+        })
+        .to("#workCard1", {
+          scale: 0.5,
+          opacity: 0.5,
+        });
 
       // Panel 2 animation (enter and exit)
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".panel2",
-          start: "left right",
-          end: "right left",
-          scrub: true,
-          // markers:true
-          containerAnimation: timeline,
-        },
-      })
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".panel2",
+            start: "left right",
+            end: "right left",
+            scrub: true,
+            // markers:true
+            containerAnimation: timeline,
+          },
+        })
         .from("#workCard2", {
           scale: 0,
           opacity: 0,
@@ -119,17 +122,24 @@ const Experience = () => {
     };
 
     const ctx = gsap.context(() => {
-      firstCardAnimation(); 
-      horizontalScrollAnimation(); 
+      firstCardAnimation();
+      horizontalScrollAnimation();
     }, mainContainer);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <div ref={mainContainer} className="relative block h-[400vh] w-full">
-      <div className="sticky top-0 h-[100vh] overflow-hidden">
-        <Text as="h1" className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold">
+    <div
+      ref={mainContainer}
+      className="relative block h-[400vh] mob:h-fit w-full"
+    >
+      {/* desktop animation */}
+      <div className="sticky top-0 h-[100vh] overflow-hidden mob:hidden">
+        <Text
+          as="h1"
+          className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[32px] mob:leading-[38px]"
+        >
           Experience
         </Text>
 
@@ -145,10 +155,13 @@ const Experience = () => {
           className="absolute right-0 bottom-0 h-[8px] mb-10 bg-dark/30 w-0"
         ></div>
 
-        <div className="flex h-full w-full" ref={scrollContainerRef}>
+        <div className="flex h-full w-full mob:px-5" ref={scrollContainerRef}>
           <div className="panel1 flex w-full shrink-0 items-center justify-center">
-            <div id="workCard1" className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6">
-              <Text className="text-[24px] font-semibold">
+            <div
+              id="workCard1"
+              className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+            >
+              <Text className="text-[30px] font-semibold mob:text-[22px]">
                 Junior Web Developer{" "}
                 <span className="text-[#33BECF]">
                   <Link href="/">@studio 93 Partner</Link>
@@ -161,20 +174,66 @@ const Experience = () => {
           </div>
 
           <div className="panel2 flex w-full shrink-0 items-center justify-center">
-            <div id="workCard2" className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6">
-              <Text className="text-[24px] font-semibold">
+            <div
+              id="workCard2"
+              className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+            >
+              <Text className="text-[30px] font-semibold mob:text-[23px]">
                 Trainee Software Engineer{" "}
                 <span className="text-[#33BECF]">
                   <Link href="/">@Seebiz Pvt. Ltd.</Link>
                 </span>
               </Text>
-              <Text className="text-[16px] font-semibold text-[#B8B9B9] mt-1">
+              <Text className="text-[19px] mob:text-[16px] font-semibold text-[#B8B9B9] mt-1">
                 June (2023) - December (2023)
               </Text>
             </div>
           </div>
+        </div>
+      </div>
 
-     
+      {/* desktop animation */}
+
+      {/* mobile cards */}
+      <div className="hidden mob:block">
+        <Text
+          as="h1"
+          className="top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[32px] mob:leading-[38px]"
+        >
+          Experience
+        </Text>
+        <div className="panel1 flex w-full shrink-0 items-center my-10 px-5 justify-center">
+          <div
+            id="workCard1"
+            className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+          >
+            <Text className="text-[30px] font-semibold mob:text-[22px]">
+              Junior Web Developer{" "}
+              <span className="text-[#33BECF]">
+                <Link href="/">@studio 93 Partner</Link>
+              </span>
+            </Text>
+            <Text className="text-[16px] font-semibold text-[#B8B9B9] mt-1">
+              January (2024) - Present
+            </Text>
+          </div>
+        </div>
+
+        <div className="panel2 flex w-full shrink-0 items-center justify-center my-10 px-5">
+          <div
+            id="workCard2"
+            className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+          >
+            <Text className="text-[30px] font-semibold mob:text-[23px]">
+              Trainee Software Engineer{" "}
+              <span className="text-[#33BECF]">
+                <Link href="/">@Seebiz Pvt. Ltd.</Link>
+              </span>
+            </Text>
+            <Text className="text-[19px] mob:text-[16px] font-semibold text-[#B8B9B9] mt-1">
+              June (2023) - December (2023)
+            </Text>
+          </div>
         </div>
       </div>
     </div>

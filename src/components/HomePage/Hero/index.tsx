@@ -18,17 +18,17 @@ const HomePageHero = () => {
     words: [
       " Hey 👋! This is Faheem",
       " Lover of Full-Stack Craft ✨|",
-      "Turning your Ideas into Digital Reality 💡|"
+      "Turning your Ideas into Digital Reality 💡|",
     ],
     loop: true,
     delaySpeed: 1800,
     typeSpeed: 80,
     deleteSpeed: 70,
-  })
+  });
 
-  const handleOpenPdf = ()=>{
-    window.open('/faheem-mern-stack.pdf')
-  }
+  const handleOpenPdf = () => {
+    window.open("/faheem-mern-stack.pdf");
+  };
 
   // useEffect(() => {
   //   if (
@@ -107,11 +107,15 @@ const HomePageHero = () => {
   // }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-full min-h-[100vh] relative mx-auto">
-      <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10" />
+    <div className="flex flex-col justify-center items-center h-full min-h-[100vh] mob:min-h-fit mob:my-[100px] relative mx-auto px-5">
+      <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10 mob:hidden" />
 
       <Text
-          as="h1" className="w-full max-w-[700px] text-center leading-[65px]">{text}</Text>
+        as="h1"
+        className="w-full max-w-[700px] text-center leading-[65px] mob:text-[32px] mob:leading-[38px]"
+      >
+        {text}
+      </Text>
 
       {/* Heading Container */}
       {/* <div className="relative h-[130px] w-full flex justify-center items-center">
@@ -142,7 +146,7 @@ const HomePageHero = () => {
         </Text>
       </div> */}
 
-      <Text className="max-w-[700px] text-[20px] mt-6 leading-[30px]">
+      <Text className="max-w-[700px] text-[20px] mob:text-[15px] mob:leading-[20px] mt-6 mob:mt-3 leading-[30px] mob:text-center">
         Explore a world where creativity meets technology. Crafted by a
         full-stack developer, this space showcases innovative digital solutions
         that transform ideas into seamless and captivating experiences.

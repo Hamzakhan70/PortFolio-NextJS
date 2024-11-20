@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className="flex justify-center items-center p-10 border-t-2">
       <div className="w-full max-w-[1100px] flex flex-col gap-[20px] justify-center items-center">
-        <div className="flex justify-between items-center w-full">
+        <div className="flex justify-between items-center w-full mob:flex-col mob:gap-7 ">
           <div className="flex gap-4">
             <Link href="https://github.com/faheem-ul">
               <FaGithub className="text-[40px] text-white hover:mt-[-5px] duration-200" />
@@ -30,7 +30,7 @@ function Footer() {
             />
           </div>
         </div>
-        <Text className="text-[22px] text-white">
+        <Text className="text-[22px] text-white mob:text-center mob:text-[15px]">
           Copyright © Fahim Ul Hassan Aziz
         </Text>
       </div>

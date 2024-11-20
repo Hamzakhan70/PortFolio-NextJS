@@ -9,29 +9,34 @@ const HomeAbout: React.FC = () => {
   const [clientsCounter, setClientsCounter] = useState(false);
 
   return (
-    <div className="flex justify-center h-full min-h-[79vh] items-center">
+    <div className="flex justify-center h-full min-h-[79vh] mob:min-h-fit mob:mb-24 items-center px-5">
       <div>
-        <Text as="h1" className="text-center">
+        <Text
+          as="h1"
+          className="text-center mob:text-[32px] mob:leading-[38px]"
+        >
           About
         </Text>
 
-        <Text className="text-[20px] font-bold py-4">BIOGRAPHY</Text>
-        <Text className="max-w-[1200px]">
-          Hello ! This is Faheem. I&apos;m a full stack web developer with a passion
-          for crafting stunning, functional, and user-centric digital journeys.
-          With a solid 1-year journey in the field, I have always looking for
-          innovative ways to bring clients&apos; visions to life. <br /> <br />I
-          believe that design is about more than just making things look pretty;
-          it&apos;s about solving problems and creating intuitive, enjoyable
-          experiences for users. Whether crafting websites, managing technical
-          aspects, or developing digital projects, I focus on delivering
-          solutions that are well-designed, functional, and user-friendly.{" "}
-          <br /> <br />
-          Excited about contributing my skills and enthusiasm, I&apos;m ready
-          to take on new challenges and bring fresh ideas to the your project.
+        <Text className="text-[20px] mob:text-[20px] mob:leading-5 mob:text-center font-bold py-4">
+          BIOGRAPHY
+        </Text>
+        <Text className="max-w-[1200px] mob:text-center mob:text-[15px] mob:leading-5">
+          Hello ! This is Faheem. I&apos;m a full stack web developer with a
+          passion for crafting stunning, functional, and user-centric digital
+          journeys. With a solid 1-year journey in the field, I have always
+          looking for innovative ways to bring clients&apos; visions to life.{" "}
+          <br /> <br />I believe that design is about more than just making
+          things look pretty; it&apos;s about solving problems and creating
+          intuitive, enjoyable experiences for users. Whether crafting websites,
+          managing technical aspects, or developing digital projects, I focus on
+          delivering solutions that are well-designed, functional, and
+          user-friendly. <br /> <br />
+          Excited about contributing my skills and enthusiasm, I&apos;m ready to
+          take on new challenges and bring fresh ideas to the your project.
         </Text>
         <div className="flex justify-between items-center mt-6">
-          <Text as="h1">
+          <Text as="h1" className="mob:text-[32px] mob:leading-[38px]">
             <CountUp start={clientsCounter ? undefined : 0} end={4}>
               {({ countUpRef }) => {
                 return (
@@ -52,8 +57,7 @@ const HomeAbout: React.FC = () => {
             + <br />
           </Text>
 
-          {/* projects */}
-          <Text as="h1">
+          <Text as="h1" className="mob:text-[32px] mob:leading-[38px]">
             <CountUp start={clientsCounter ? undefined : 0} end={3}>
               {({ countUpRef }) => {
                 return (
@@ -74,9 +78,7 @@ const HomeAbout: React.FC = () => {
             + <br />
           </Text>
 
-          {/* experience */}
-
-          <Text as="h1">
+          <Text as="h1" className="mob:text-[32px] mob:leading-[38px]">
             <CountUp start={clientsCounter ? undefined : 0} end={1}>
               {({ countUpRef }) => {
                 return (
@@ -99,9 +101,18 @@ const HomeAbout: React.FC = () => {
         </div>
 
         <div className="flex justify-between mb-6">
-          <Text className="text-[20px] font-medium"> Satisfied Clients</Text>
-          <Text className="text-[20px] mr-12 font-medium"> Projects</Text>
-          <Text className="text-[20px] font-medium"> Experience</Text>
+          <Text className="text-[20px] font-medium mob:text-[15px] mob:leading-5">
+            {" "}
+            Satisfied Clients
+          </Text>
+          <Text className="text-[20px] mr-12 font-medium mob:text-[15px] mob:leading-5">
+            {" "}
+            Projects
+          </Text>
+          <Text className="text-[20px] font-medium mob:text-[15px] mob:leading-5">
+            {" "}
+            Experience
+          </Text>
         </div>
       </div>
     </div>

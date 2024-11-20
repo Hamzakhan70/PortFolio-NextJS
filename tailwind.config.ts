@@ -19,12 +19,21 @@ const config: Config = {
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
+  			sm: 'calc(var(--radius) - 4px)',
+			
   		},
   		colors: {
   			background: 'hsl(var(--background))',
 			dark: 'hsla(0, 0%, 96%, .3)'
-  		}
+  		},
+		  screens: {
+			"2xl": { max: "1535px" },
+			xl: { max: "1279px" },                      
+			lg: { max: "1023px" },
+			navsize: { max: "1180px" },
+			tab: { max: "991px" },
+			mob: { max: "768px" },
+		  },
   	}
   },
   plugins: [require("tailwindcss-animate")],
