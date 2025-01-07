@@ -47,15 +47,15 @@ const Skills = () => {
     "Express",
   ];
   return (
-    <div className="w-full h-full min-h-[76vh] flex items-center justify-center">
+    <div className="w-full h-full min-h-[76vh] flex items-center justify-center mob:min-h-fit mob:mt-24">
       <div className="w-full h-full relative">
         <Text
           as="h1"
-          className="text-center mob:text-[32px] mob:leading-[38px]"
+          className="text-center mob:text-[40px] mob:leading-[48px]"
         >
           Development Skills
         </Text>
-        <div className="w-full flex justify-center items-center mt-[100px]">
+        <div className="w-full flex justify-center items-center mt-[100px] mob:mt-12">
           <div className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px] mob:gap-10 mob:px-5">
             {skillsArray.map((skill, index) => (
               <div

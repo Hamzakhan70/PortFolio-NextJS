@@ -112,7 +112,7 @@ const HomePageHero = () => {
 
       <Text
         as="h1"
-        className="w-full max-w-[700px] text-center leading-[65px] mob:text-[32px] mob:leading-[38px]"
+        className="w-full max-w-[700px] text-center leading-[65px] mob:text-[40px] mob:leading-[48px]"
       >
         {text}
       </Text>

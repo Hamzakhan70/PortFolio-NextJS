@@ -13,7 +13,7 @@ const HomeAbout: React.FC = () => {
       <div>
         <Text
           as="h1"
-          className="text-center mob:text-[32px] mob:leading-[38px]"
+          className="text-center mob:text-[40px] mob:leading-[48px]"
         >
           About
         </Text>
@@ -36,7 +36,7 @@ const HomeAbout: React.FC = () => {
           take on new challenges and bring fresh ideas to the your project.
         </Text>
         <div className="flex justify-between items-center mt-6">
-          <Text as="h1" className="mob:text-[32px] mob:leading-[38px]">
+          <Text as="h1" className="mob:text-[40px] mob:leading-[48px]">
             <CountUp start={clientsCounter ? undefined : 0} end={4}>
               {({ countUpRef }) => {
                 return (
@@ -57,7 +57,7 @@ const HomeAbout: React.FC = () => {
             + <br />
           </Text>
 
-          <Text as="h1" className="mob:text-[32px] mob:leading-[38px]">
+          <Text as="h1" className="mob:text-[40px] mob:leading-[48px]">
             <CountUp start={clientsCounter ? undefined : 0} end={3}>
               {({ countUpRef }) => {
                 return (
@@ -78,7 +78,7 @@ const HomeAbout: React.FC = () => {
             + <br />
           </Text>
 
-          <Text as="h1" className="mob:text-[32px] mob:leading-[38px]">
+          <Text as="h1" className="mob:text-[40px] mob:leading-[48px]">
             <CountUp start={clientsCounter ? undefined : 0} end={1}>
               {({ countUpRef }) => {
                 return (

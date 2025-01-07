@@ -10,7 +10,7 @@ const Projects = () => {
       <div className="w-full h-full">
         <Text
           as="h1"
-          className="text-center mob:text-[32px] mob:leading-[38px]"
+          className="text-center mob:text-[40px] mob:leading-[48px]"
         >
           Blueprints of Creativity
         </Text>
