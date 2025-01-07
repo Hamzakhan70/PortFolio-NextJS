@@ -109,7 +109,7 @@ export default function ProjectsSlider() {
               "Project Overview - STNDRD Fitness Web App: The STNDRD Fitness Web App was designed to elevate fitness enthusiasts' experiences by providing a platform tailored to their goals and aspirations. Created for Cbum's fitness community, the app serves as a hub for fitness resources, interactive tools, and personalized features. It offers a seamless way for users to manage their profiles, track fitness progress, and engage with premium content and programs. By integrating modern design principles with robust functionalities, the platform ensures an engaging and user-friendly experience, empowering users to achieve their fitness ambitions effectively. With its intuitive interface and comprehensive features, the STNDRD Fitness Web App establishes itself as a game-changing tool for those passionate about fitness and well-being.",
               "Challenges:",
               "Visual Engagement ; The primary challenge was to create a visually engaging web app, incorporating scroll-based animations that effectively showcased our subscription-based fitness services.",
-              " Seamless Payment Processing ; Implementing an intuitive user experience while seamlessly integrating payment processing through Stripe required meticulous planning to ensure both security and user-friendliness.",
+              "Seamless Payment Processing ; Implementing an intuitive user experience while seamlessly integrating payment processing through Stripe required meticulous planning to ensure both security and user-friendliness.",
               "Scalability for Growing User Base ; Designing the app's architecture to handle a growing number of users without performance degradation. Ensuring that the web app remains fast and responsive, even with heavy media content and user interactions.",
               "Responsive Design for All Devices ; Making the app fully responsive so it performs well across desktops, tablets, and smartphones.",
               "Tight Deadlines ; The project had a tight schedule, requiring efficient time management.",
@@ -151,14 +151,24 @@ export default function ProjectsSlider() {
             ProjectsContributionTitle="My contribution in 1890 Foudation is as follows;"
             aboutProject="This is about 1890 Project"
             projectsContributionContent={[
-              "Designed and Developed the User Dashboard UI: Built an intuitive and responsive user interface for the dashboard using Next.js and Tailwind CSS, ensuring cross-device compatibility.",
-              "Integrated Profile Picture Upload Feature: Implemented a user profile picture upload functionality, integrating with Firebase for storage and retrieval.",
-              "Enhanced Document Management: Added an 'Edit' button to PDF thumbnails, enabling users to edit PDFs stored in Firestore.",
               "Dynamic Sidebar with Mobile Responsiveness: Created a sidebar with conditional rendering for tab navigation and a hamburger menu for mobile users, ensuring a smooth user experience with auto-closing functionality on tab selection.",
-              "Implemented Landing Page for Black Friday: Developed a promotional landing page with a real-time countdown timer component to enhance user engagement.",
+              "Backend Integrations: Developed an API using Nodemailer to handle form submissions, sending responses to both the user and admin via email.",
+              "UI Enhancements: Created various interactive sliders to enhance user engagement and deliver a captivating UI experience.",
             ]}
             aboutContent={[
               "Project Overview - 1890 Foundation Web App: The 1890 Foundation is dedicated to advancing the mission of the 1890 Historically Black Colleges and Universities (HBCUs) by enhancing their capacity to deliver high-quality education, promote research, and foster community engagement. Established to provide resources and support to these institutions, the foundation focuses on expanding access to academic and professional development opportunities for students, faculty, and staff. By strengthening partnerships, facilitating innovative programs, and securing funding, the 1890 Foundation aims to empower HBCUs to continue playing a pivotal role in shaping the future of higher education and society. Through its initiatives, the foundation supports the growth and sustainability of these historically significant institutions, ensuring they remain vibrant centers of learning, culture, and excellence.",
+              "Challenges:",
+              "Working with NodeMailer ; A key challenge while working with 1890 was integrating Nodemailer, as it was outside of my prior experience. However, I successfully learned and implemented it to handle email notifications effectively.",
+              "Tight Deadlines ; The project had a tight schedule, requiring efficient time management.",
+              "Cross-Browser Compatibility ; Ensuring seamless functionality across various browsers.",
+              "Key Features:",
+              "Nodemailer Integration;  Allows seamless communication by sending automated emails for form submissions, registrations, and notifications to both users and admins.",
+              "Donation System; A secure payment system integrated for users to make donations to support the foundation and its programs.",
+              "Responsive Design; Ensures the website is fully functional and visually appealing across all devices, providing an optimized user experience on both desktop and mobile.",
+              "Implementation Details:",
+              "Front-end ; We utilized Next.js for rapid rendering, TypeScript for enhanced reliability, Tailwind CSS for efficient UI development, and On-Scroll Animation Libarary for scroll base animations.",
+              "Back-end ; Node.js and Express were used for API development and server-side logic.",
+              "Conclusion: In conclusion, the 1890 Foundation Web App successfully integrates advanced features such as Nodemailer for seamless communication, a secure donation system, and a responsive design to enhance user experience across devices. Despite challenges like tight deadlines and cross-browser compatibility, the project was completed efficiently, leveraging modern technologies like Next.js, TypeScript, and Node.js. The foundation's web platform now effectively supports its mission of empowering HBCUs and providing valuable resources to students, faculty, and staff.",
             ]}
           />
         </SwiperSlide>

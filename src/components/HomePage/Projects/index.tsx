@@ -6,7 +6,7 @@ import ProjectsSlider from "./slider";
 
 const Projects = () => {
   return (
-    <div className="w-full h-full min-h-[100vh] mob:min-h-max flex items-center justify-center px-5">
+    <div className="w-full h-full min-h-[90vh] mob:min-h-max flex items-center justify-center px-5">
       <div className="w-full h-full">
         <Text
           as="h1"

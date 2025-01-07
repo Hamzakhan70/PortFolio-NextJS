@@ -33,7 +33,10 @@ const ProjectAbout: React.FC<ProjectAboutProps> = ({ title, content }) => {
       if (isChallengesSection && !item.includes(":")) {
         const [boldText, ...rest] = item.split(";");
         return (
-          <ul key={index} className="list-decimal pl-8 font-poppins mb-3">
+          <ul
+            key={index}
+            className="list-decimal pl-8 mob:pl-0 font-poppins mb-3"
+          >
             <span className="font-bold text-[18px]">{boldText}:</span>{" "}
             {rest.join(":")}
           </ul>

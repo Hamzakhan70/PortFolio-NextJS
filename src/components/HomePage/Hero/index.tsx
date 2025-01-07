@@ -107,12 +107,12 @@ const HomePageHero = () => {
   // }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center h-full min-h-[100vh] mob:min-h-fit mob:my-[100px] relative mx-auto px-5">
+    <div className="flex flex-col justify-center items-center h-full min-h-[60vh] mob:min-h-fit mob:my-[100px] relative mx-auto px-5">
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10 mob:hidden" />
 
       <Text
         as="h1"
-        className="w-full max-w-[700px] text-center leading-[65px] mob:text-[40px] mob:leading-[48px]"
+        className="w-full max-w-[800px] text-center leading-[70px] mob:text-[40px] mob:leading-[48px]"
       >
         {text}
       </Text>
@@ -146,13 +146,13 @@ const HomePageHero = () => {
         </Text>
       </div> */}
 
-      <Text className="max-w-[700px] text-[20px] mob:text-[15px] mob:leading-[20px] mt-6 mob:mt-3 leading-[30px] mob:text-center">
+      <Text className="max-w-[800px] text-[20px] mob:text-[15px] text-center mob:leading-[20px] mt-10 mob:mt-3 leading-[30px] mob:text-center">
         Explore a world where creativity meets technology. Crafted by a
         full-stack developer, this space showcases innovative digital solutions
         that transform ideas into seamless and captivating experiences.
       </Text>
 
-      <div className="flex gap-4 items-center mt-9">
+      <div className="flex gap-[80px] items-center mt-9">
         <Button onClick={handleOpenPdf} className="text-[18px]">
           Resume
         </Button>

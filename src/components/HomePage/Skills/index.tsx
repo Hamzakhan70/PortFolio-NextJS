@@ -47,7 +47,7 @@ const Skills = () => {
     "Express",
   ];
   return (
-    <div className="w-full h-full min-h-[76vh] flex items-center justify-center mob:min-h-fit mob:mt-24">
+    <div className="w-full h-full flex items-center justify-center mob:min-h-fit mob:mt-24">
       <div className="w-full h-full relative">
         <Text
           as="h1"
