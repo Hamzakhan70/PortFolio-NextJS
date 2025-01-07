@@ -13,13 +13,13 @@ interface Props {
 
 const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
   (props, ref) => {
-    const { children, className, as, onclick, Style} = props;
+    const { children, className, as, onclick, Style } = props;
     if (as === "h1") {
       return (
         <h1
           ref={ref}
           className={cn(
-            "font-poppins text-white text-[60px] font-bold leading-[96px]",
+            "font-poppins text-white text-[60px] mob:text-[40px] font-bold leading-[96px]",
             className
           )}
           onClick={onclick}

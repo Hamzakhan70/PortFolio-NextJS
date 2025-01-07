@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Image from "next/image";
 
@@ -11,10 +9,9 @@ import FitFoodAbout from "../../AboutProjects/my-fit-food";
 import fitfood from "../../../../../../public/images/my-fit-food.png";
 
 const SlideOne = () => {
-
   return (
-    <div className=" border border-1 w-full flex items-center px-5 py-10 justify-center rounded-[12px]">
-      <div className="w-[50%]">
+    <div className=" border border-1 w-full flex items-center px-5 py-10 mob:flex-col justify-center rounded-[12px]">
+      <div className="w-[50%] mob:w-full">
         <Text className="text-[#34C4CA] text-[20px]">Showcase Spotlight: </Text>
         <Text as="h1">My Fit Food</Text>
         <LinkButton
@@ -30,12 +27,16 @@ const SlideOne = () => {
           integration.
         </Text>
         <div className="flex gap-10">
-        <FitFoodContribution/>
-        <FitFoodAbout/>
+          <FitFoodContribution />
+          <FitFoodAbout />
         </div>
       </div>
       <div className="w-[50%] h-full border border-white py-5 px-2 rounded-[8px]">
-        <Image src={fitfood} alt="Fit-food" className="w-full h-full rounded-[4px]" />
+        <Image
+          src={fitfood}
+          alt="Fit-food"
+          className="w-full h-full rounded-[4px]"
+        />
       </div>
     </div>
   );
