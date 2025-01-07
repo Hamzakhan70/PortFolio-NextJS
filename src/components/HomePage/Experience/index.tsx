@@ -135,10 +135,10 @@ const Experience = () => {
       className="relative block h-[400vh] mob:h-fit w-full"
     >
       {/* desktop animation */}
-      <div className="sticky top-0 h-[100vh] overflow-hidden mob:hidden">
+      <div className="sticky top-0 h-[120vh] overflow-hidden mob:hidden">
         <Text
           as="h1"
-          className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[32px] mob:leading-[38px]"
+          className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[40px] mob:leading-[48px]"
         >
           Experience
         </Text>
@@ -152,7 +152,7 @@ const Experience = () => {
         ></div>
         <div
           ref={rightExpandingDivRef}
-          className="absolute right-0 bottom-0 h-[8px] mb-10 bg-dark/30 w-0"
+          className="absolute right-0 bottom-[180px] h-[8px] bg-dark/30 w-0"
         ></div>
 
         <div className="flex h-full w-full mob:px-5" ref={scrollContainerRef}>
@@ -162,14 +162,47 @@ const Experience = () => {
               className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
             >
               <Text className="text-[30px] font-semibold mob:text-[22px]">
-                Junior Web Developer{" "}
+                Junior Software Developer{" "}
                 <span className="text-[#33BECF]">
-                  <Link href="/">@studio 93 Partner</Link>
+                  <Link href="https://www.linkedin.com/company/s93partner/">
+                    @S93 Partner
+                  </Link>
                 </span>
               </Text>
-              <Text className="text-[16px] font-semibold text-[#B8B9B9] mt-1">
+              <Text className="text-[20px] font-semibold text-[#B8B9B9] mt-1">
                 January (2024) - Present
               </Text>
+              <Text className="mt-3 text-[18px]">
+                As a Junior Web Developer, my primary focus has been on
+                developing responsive and dynamic web applications while
+                collaborating with senior developers to implement new features.
+                I have also contributed to enhancing backend functionality by
+                designing and implementing RESTful APIs. Additionally, I worked
+                closely with cross-functional teams, including UX/UI and QA, to
+                deliver high-quality, user-centric web solutions.
+              </Text>
+
+              <ul className=" text-white list-disc text-[18px] mt-4 px-4 font-poppins">
+                <li className="mb-2">
+                  Designed and developed the user dashboard for the STNDRD app
+                  and contributed to building the STNDRD website.
+                </li>
+                <li className="mb-2">
+                  Built the entire UI for over 5 websites using TypeScript,
+                  Next.js, React Query, Tailwind, and GSAP for animations.
+                  Ensured code reusability and maintained clean, efficient code
+                  to simplify debugging and future development.
+                </li>
+                <li className="mb-2">
+                  Worked with Firebase for managing user data, including profile
+                  images, storing and retrieving data, and implementing
+                  authentication.
+                </li>
+                <li className="mb-2">
+                  Utilized React Query for efficient data management and Zustand
+                  for state management.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -181,12 +214,39 @@ const Experience = () => {
               <Text className="text-[30px] font-semibold mob:text-[23px]">
                 Trainee Software Engineer{" "}
                 <span className="text-[#33BECF]">
-                  <Link href="/">@Seebiz Pvt. Ltd.</Link>
+                  <Link href="https://www.linkedin.com/company/seebizpk/posts/?feedView=all">
+                    @Seebiz Pvt. Ltd.
+                  </Link>
                 </span>
               </Text>
-              <Text className="text-[19px] mob:text-[16px] font-semibold text-[#B8B9B9] mt-1">
-                June (2023) - December (2023)
+              <Text className="text-[20px] mob:text-[16px] font-semibold text-[#B8B9B9] mt-1">
+                June (2023) - January (2024)
               </Text>
+              <Text className="mt-3 text-[18px]">
+                Completed a rigorous 8-month software development training,
+                mastering HTML, CSS, and JavaScript fundamentals, and advancing
+                to proficient levels in React and Node.js. Developed a strong
+                foundation in full-stack web development
+              </Text>
+              <ul className=" text-white list-disc text-[18px] mt-4 px-4 font-poppins">
+                <li className="mb-2">
+                  Designed and implemented a quiz web application using HTML,
+                  CSS, and JavaScript. Crafted a todo web application
+                </li>
+                <li className="mb-2">
+                  Crafted a todo web application with the help of React, and
+                  CSS. Used local storage for data saving purposes
+                </li>
+                <li className="mb-2">
+                  Developed a full-stack CRUD application using Express.js and
+                  Mongoose, for creating, retrieving, updating, and deleting
+                  data within a MongoDB database
+                </li>
+                <li className="mb-2">
+                  Developed independent learning skills through continuous
+                  exploration and research.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -198,11 +258,11 @@ const Experience = () => {
       <div className="hidden mob:block">
         <Text
           as="h1"
-          className="top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[32px] mob:leading-[38px]"
+          className="top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[40px] mob:leading-[48px]"
         >
           Experience
         </Text>
-        <div className="panel1 flex w-full shrink-0 items-center my-10 px-5 justify-center">
+        <div className=" flex w-full  items-center my-10 px-5 justify-center">
           <div
             id="workCard1"
             className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
@@ -216,14 +276,41 @@ const Experience = () => {
             <Text className="text-[16px] font-semibold text-[#B8B9B9] mt-1">
               January (2024) - Present
             </Text>
+            <Text className="mt-3 text-[16px]">
+              As a Junior Web Developer, my primary focus has been on developing
+              responsive and dynamic web applications while collaborating with
+              senior developers to implement new features. I have also
+              contributed to enhancing backend functionality by designing and
+              implementing RESTful APIs. Additionally, I worked closely with
+              cross-functional teams, including UX/UI and QA, to deliver
+              high-quality, user-centric web solutions.
+            </Text>
+
+            <ul className=" text-white list-disc text-[16px] mt-4 px-4 font-poppins">
+              <li className="mb-2">
+                Designed and developed the user dashboard for the STNDRD app and
+                contributed to building the STNDRD website.
+              </li>
+              <li className="mb-2">
+                Built the entire UI for over 5 websites using TypeScript,
+                Next.js, React Query, Tailwind, and GSAP for animations. Ensured
+                code reusability and maintained clean, efficient code to
+                simplify debugging and future development.
+              </li>
+              <li className="mb-2">
+                Worked with Firebase for managing user data, including profile
+                images, storing and retrieving data, and implementing
+                authentication.
+              </li>
+              <li className="mb-2">
+                Utilized React Query for efficient data management and Zustand
+                for state management.
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div className="panel2 flex w-full shrink-0 items-center justify-center my-10 px-5">
-          <div
-            id="workCard2"
-            className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
-          >
+        <div className=" flex w-full items-center justify-center my-10 mob:mt-[50px] px-5">
+          <div className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6">
             <Text className="text-[30px] font-semibold mob:text-[23px]">
               Trainee Software Engineer{" "}
               <span className="text-[#33BECF]">
@@ -233,6 +320,31 @@ const Experience = () => {
             <Text className="text-[19px] mob:text-[16px] font-semibold text-[#B8B9B9] mt-1">
               June (2023) - December (2023)
             </Text>
+            <Text className="mt-3 text-[16px]">
+              Completed a rigorous 8-month software development training,
+              mastering HTML, CSS, and JavaScript fundamentals, and advancing to
+              proficient levels in React and Node.js. Developed a strong
+              foundation in full-stack web development
+            </Text>
+            <ul className=" text-white list-disc text-[16px] mt-4 px-4 font-poppins">
+              <li className="mb-2">
+                Designed and implemented a quiz web application using HTML, CSS,
+                and JavaScript. Crafted a todo web application
+              </li>
+              <li className="mb-2">
+                Crafted a todo web application with the help of React, and CSS.
+                Used local storage for data saving purposes
+              </li>
+              <li className="mb-2">
+                Developed a full-stack CRUD application using Express.js and
+                Mongoose, for creating, retrieving, updating, and deleting data
+                within a MongoDB database
+              </li>
+              <li className="mb-2">
+                Developed independent learning skills through continuous
+                exploration and research.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -3,12 +3,12 @@ import Text from "@/components/UI/Text";
 
 const Education = () => {
   return (
-    <div className="w-full h-full min-h-[100vh] flex items-center mob:min-h-fit justify-center mob:mb-12">
+    <div className="w-full h-full min-h-[100vh] flex items-center mob:min-h-fit justify-center mob:mb-12 mob:mt-24">
       <div className="w-full h-full  flex justify-center items-center px-5">
         <div>
           <Text
             as="h1"
-            className="text-center mb-14 mob:text-[32px] mob:leading-[38px]"
+            className="text-center mb-14 mob:mb-[50px] mob:text-[40px] mob:leading-[48px]"
           >
             Education
           </Text>

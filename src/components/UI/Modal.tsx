@@ -11,10 +11,15 @@ interface ModalProps {
   closeModal: () => void;
 }
 
-const MyModal: React.FC<ModalProps> = ({ title, children, isOpen, closeModal }) => {
+const MyModal: React.FC<ModalProps> = ({
+  title,
+  children,
+  isOpen,
+  closeModal,
+}) => {
   return (
     <Transition appear show={isOpen} as={Fragment}>
-    <Dialog as="div" className="relative z-[1001]" onClose={closeModal}>
+      <Dialog as="div" className="relative z-[1001]" onClose={closeModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -28,7 +33,7 @@ const MyModal: React.FC<ModalProps> = ({ title, children, isOpen, closeModal }) 
         </Transition.Child>
 
         <div className="fixed inset-0 overflow-y-auto ">
-          <div className="flex min-h-full items-center justify-center py-4 px-6 text-center ">
+          <div className="flex min-h-full w-full items-center justify-center py-4 px-6 mob:px-4 text-center mob:bg-[#565C67]/50 mob:bg-opacity-60">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -38,19 +43,20 @@ const MyModal: React.FC<ModalProps> = ({ title, children, isOpen, closeModal }) 
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-[85vw] transform overflow-hidden bg-black rounded-[5px]  p-6 ">
-                <div className="mt-2 flex justify-between items-center">
-                  <Text className=" font-bold text-[40px] mt-10 leading-6">
-                    {title}
-                  </Text>
-
+              <Dialog.Panel className="w-full max-w-[85vw] mob:max-w-full transform overflow-hidden bg-black rounded-[5px] mob:rounded-[10px] p-6 ">
+                <div className="w-full flex justify-end items-end">
                   <button
                     type="button"
-                    className="inline-flex justify-center rounded-md border border-transparent hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 duration-500 focus-visible:ring-offset-2"
+                    className=" rounded-md border border-transparent hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 duration-500 focus-visible:ring-offset-2"
                     onClick={closeModal}
                   >
                     <RxCross2 className="text-[#34C4CA] text-[30px] font-bold" />
                   </button>
+                </div>
+                <div className="flex justify-center items-center">
+                  <Text className=" font-bold text-[40px] mob:text-[35px] text-[#34C4CA] mt-10 mb-5 leading-6 mob:leading-[45px]">
+                    {title}
+                  </Text>
                 </div>
                 {children}
               </Dialog.Panel>
