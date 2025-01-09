@@ -56,7 +56,10 @@ const Skills = () => {
           Development Skills
         </Text>
         <div className="w-full flex justify-center items-center mt-[100px] mob:mt-12">
-          <div className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px] mob:gap-10 mob:px-5">
+          <div
+            className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px] mob:gap-10 mob:px-5"
+            data-aos="fade-right"
+          >
             {skillsArray.map((skill, index) => (
               <div
                 key={index}

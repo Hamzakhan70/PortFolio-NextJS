@@ -6,6 +6,7 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AosProvider from "./providers/AOSProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -30,9 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <>
         <body className={`${poppins.variable}`}>
-          <Navbar />
-          {children}
-          <Footer />
+          <AosProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </AosProvider>
         </body>
       </>
     </html>
