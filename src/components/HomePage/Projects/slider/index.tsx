@@ -166,7 +166,7 @@ export default function ProjectsSlider() {
               "Donation System; A secure payment system integrated for users to make donations to support the foundation and its programs.",
               "Responsive Design; Ensures the website is fully functional and visually appealing across all devices, providing an optimized user experience on both desktop and mobile.",
               "Implementation Details:",
-              "Front-end ; We utilized Next.js for rapid rendering, TypeScript for enhanced reliability, Tailwind CSS for efficient UI development, and On-Scroll Animation Libarary for scroll base animations.",
+              "Front-end ; We utilized Next.js for rapid rendering, TypeScript for enhanced reliability, Tailwind CSS for efficient UI development, and Animate On Scroll Library for scroll base animations.",
               "Back-end ; Node.js and Express were used for API development and server-side logic.",
               "Conclusion: In conclusion, the 1890 Foundation Web App successfully integrates advanced features such as Nodemailer for seamless communication, a secure donation system, and a responsive design to enhance user experience across devices. Despite challenges like tight deadlines and cross-browser compatibility, the project was completed efficiently, leveraging modern technologies like Next.js, TypeScript, and Node.js. The foundation's web platform now effectively supports its mission of empowering HBCUs and providing valuable resources to students, faculty, and staff.",
             ]}
