@@ -46,6 +46,11 @@ const Skills = () => {
     "Firebase",
     "Express",
   ];
+
+  const getAnimationDirection = (index: number) => {
+    return index % 2 === 0 ? "fade-left" : "fade-right";
+  };
+
   return (
     <div className="w-full h-full flex items-center justify-center mob:min-h-fit mob:mt-24">
       <div className="w-full h-full relative">
@@ -56,16 +61,16 @@ const Skills = () => {
           Development Skills
         </Text>
         <div className="w-full flex justify-center items-center mt-[100px] mob:mt-12">
-          <div
-            className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px] mob:gap-10 mob:px-5"
-            data-aos="fade-right"
-          >
+          <div className="flex w-full max-w-[560px] justify-center items-center flex-wrap gap-[50px] mob:gap-10 mob:px-5">
             {skillsArray.map((skill, index) => (
               <div
                 key={index}
                 className="w-[96px] h-[96px] mob:w-[85px] mob:h-[85px] relative"
                 onMouseEnter={() => sethoverSkill(index)}
                 onMouseLeave={() => sethoverSkill(null)}
+                data-aos={getAnimationDirection(index)}
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
               >
                 <Image
                   src={skill}

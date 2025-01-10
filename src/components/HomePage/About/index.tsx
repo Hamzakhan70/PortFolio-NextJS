@@ -12,6 +12,8 @@ const HomeAbout: React.FC = () => {
     <div
       className="flex justify-center h-full min-h-[79vh] mob:min-h-fit mob:mb-24 items-center px-5"
       data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine"
     >
       <div>
         <Text
@@ -24,7 +26,7 @@ const HomeAbout: React.FC = () => {
         <Text className="text-[20px] mob:text-[20px] mob:leading-5 mob:text-center font-bold py-4">
           BIOGRAPHY
         </Text>
-        <Text className="max-w-[1200px] mob:text-center mob:text-[15px] mob:leading-5">
+        <Text className="max-w-[1200px] mob:text-center mob:text-[16px] mob:leading-5">
           Hello ! This is Faheem. I&apos;m a full stack web developer with a
           passion for crafting stunning, functional, and user-centric digital
           journeys. With a solid 1-year journey in the field, I have always
