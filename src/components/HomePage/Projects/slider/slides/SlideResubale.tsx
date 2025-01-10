@@ -45,7 +45,7 @@ const SlideResubale: FC<SlidesResubaleProps> = ({
         >
           Visit Project
         </LinkButton>
-        <Text className="mt-4 mob:text-[15px] mob:text-center mob:font-medium">
+        <Text className="mt-4 mob:text-[15px] mob:font-medium">
           {projectSummary}
         </Text>
         <div className="flex gap-10 mob:flex-col mob:gap-2">

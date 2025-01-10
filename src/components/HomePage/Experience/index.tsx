@@ -138,7 +138,7 @@ const Experience = () => {
       <div className="sticky top-0 h-[120vh] overflow-hidden mob:hidden">
         <Text
           as="h1"
-          className="absolute top-[70px] w-full text-center mt-16 text-7xl font-bold mob:text-[40px] mob:leading-[48px]"
+          className="absolute top-[70px] w-full text-center mt-16 text-[60px] font-bold mob:text-[40px] mob:leading-[48px]"
         >
           Experience
         </Text>

@@ -36,7 +36,7 @@ const Navbar = () => {
             About
           </LinkButton>
           <LinkButton
-            href="mailto:fahimjsdeveloper@gmail.com"
+            href="#contact-me"
             className=" bg-transparent border-none text-white hover:bg-transparent"
           >
             Contact
@@ -86,7 +86,7 @@ const Navbar = () => {
           </div>
 
           <div className="fixed bottom-4 right-4 flex items-center justify-center overflow-hidden mob:absolute mob:bottom-auto mob:left-auto mob:right-0 mob:top-0 ">
-            <div className="relative flex h-auto w-[200px] items-center justify-center mob:w-[130px] ">
+            <div className="relative mob:flex h-auto w-[200px] items-center justify-center mob:w-[130px] hidden">
               <Image src={hiresvg} alt="hire" className="animate-spin" />
               <div className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-solid p-0 text-[16px] font-semibold text-light shadow-md  mob:h-[2.7rem] mob:w-[2.7rem] mob:text-[10px]">
                 <LinkButton
@@ -97,14 +97,12 @@ const Navbar = () => {
                 </LinkButton>
               </div>
 
-              {/* <Link href="mailto:ateebasif9021@gmail.com"> */}
               <LinkButton
                 href="mailto:fahimjsdeveloper@gmail.com"
                 className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-solid border-dark bg-dark p-0 text-[16px] font-semibold text-light shadow-md  dark:bg-light dark:text-dark  mob:h-[2.7rem] mob:w-[2.7rem] mob:text-[10px]"
               >
                 Hire Me
               </LinkButton>
-              {/* </Link> */}
             </div>
           </div>
         </div>

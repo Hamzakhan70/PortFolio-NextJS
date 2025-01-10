@@ -1,40 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
 
 import Text from "../UI/Text";
-import Button from "../UI/Button";
 
 function Footer() {
   return (
-    <div className="flex justify-center items-center p-10 border-t-2">
-      <div className="w-full max-w-[1100px] flex flex-col gap-[20px] justify-center items-center">
-        <div className="flex justify-between items-center w-full mob:flex-col mob:gap-7 ">
-          <div className="flex gap-4">
-            <Link href="https://github.com/faheem-ul">
-              <FaGithub className="text-[40px] text-white hover:mt-[-5px] duration-200" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
-              <FaLinkedin className="text-[40px] text-white hover:mt-[-5px] duration-200" />
-            </Link>
-            <Link href="mailto:faheemulhassanaziz@gmail.com">
-              <MdEmail className="text-[40px] text-white hover:mt-[-5px] duration-200" />
-            </Link>
+    <div
+      className="flex justify-center items-center p-10 mob:px-7 border-t-2"
+      id="#contact-me"
+    >
+      <div className="w-full max-w-[1100px] mob:max-w-full flex flex-col gap-[20px] justify-center items-center">
+        <div className="flex justify-between items-center mob:flex-col mob:items-start w-full mob:justify-center mob:gap-4">
+          <div className="">
+            <div className="flex gap-3 items-center mb-5">
+              <Link href="https://github.com/faheem-ul">
+                <FaGithub className="text-[40px] text-white" />
+              </Link>
+              <Link href="https://github.com/faheem-ul">
+                <Text>https://github.com/faheem-ul</Text>
+              </Link>
+            </div>
+            <div className="flex gap-3 items-center mb-5">
+              <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
+                <FaLinkedin className="text-[40px] text-white" />
+              </Link>
+              <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
+                <Text>https://www.linkedin.com/in/fahim</Text>
+              </Link>
+            </div>
           </div>
-          <div className="relative">
-            <textarea
-              className="bg-white w-[400px] h-[50px] rounded-[10px] mob:w-auto p-3 placeholder:font-poppins font-poppins placeholder:text-[#616161] placeholder:text-[17px] focus:outline-none"
-              placeholder="Send Your Feedback"
-            />
-            <Button
-              type="submit"
-              className="absolute right-1 bottom-[9px] bg-blue-500 text-white px-4 py-2 rounded-[10px] hover:bg-blue-600"
-            >
-              Submit
-            </Button>
+          <div className="">
+            <div className="flex gap-3 items-center mb-5">
+              <Link href="https://github.com/faheem-ul">
+                <MdEmail className="text-[40px] text-white" />
+              </Link>
+
+              <Link href="https://github.com/faheem-ul">
+                <Text>fahimjsdeveloper@gmail.com</Text>
+              </Link>
+            </div>
+            <div className="flex gap-3 items-center mb-5">
+              <Link href="tel:03494820657">
+                <IoCall className="text-[40px] text-white" />
+              </Link>
+              <Link href="tel:03494820657">
+                <Text>+92-349-4820657</Text>
+              </Link>
+            </div>
           </div>
         </div>
         <Text className="text-[22px] text-white mob:text-center mob:text-[15px]">

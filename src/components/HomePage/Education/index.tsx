@@ -4,8 +4,10 @@ import Text from "@/components/UI/Text";
 const Education = () => {
   return (
     <div
-      className="w-full h-full min-h-[100vh] flex items-center mob:min-h-fit justify-center mob:mb-12 mob:mt-24"
-      data-aos="fade-down"
+      className="w-full h-full min-h-[100vh] mb-[20px] flex items-center mob:min-h-fit justify-center mob:mb-[150px] mob:mt-24"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine"
     >
       <div className="w-full h-full  flex justify-center items-center px-5">
         <div>

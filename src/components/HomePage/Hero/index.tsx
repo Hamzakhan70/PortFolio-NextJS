@@ -21,9 +21,9 @@ const HomePageHero = () => {
       "Turning your Ideas into Digital Reality 💡|",
     ],
     loop: true,
-    delaySpeed: 1800,
-    typeSpeed: 80,
-    deleteSpeed: 70,
+    delaySpeed: 1000,
+    typeSpeed: 100,
+    deleteSpeed: 50,
   });
 
   const handleOpenPdf = () => {
@@ -110,6 +110,8 @@ const HomePageHero = () => {
     <div
       className="flex flex-col justify-center items-center h-full min-h-[60vh] mob:min-h-fit mob:my-[100px] relative mx-auto px-5"
       data-aos="zoom-in"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-sine"
     >
       <GiCometSpark className="text-center animate-spin text-[60px] text-white mb-10 mob:hidden" />
 
