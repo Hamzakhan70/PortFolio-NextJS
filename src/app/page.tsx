@@ -6,6 +6,7 @@ import Projects from "@/components/HomePage/Projects";
 import Experience from "@/components/HomePage/Experience";
 import Skills from "@/components/HomePage/Skills";
 import Education from "@/components/HomePage/Education";
+import FeedbackForm from "@/components/HomePage/FeedbackForm";
 
 import LinkButton from "@/components/UI/LinkButton";
 
@@ -25,7 +26,8 @@ export default function Home() {
       <Experience />
       <Skills />
       <Education />
-      <div className="fixed bottom-9 right-0 z-50 mob:top-0 mob:hidden">
+      <FeedbackForm />
+      <div className="fixed bottom-[240px] right-0 z-50 mob:top-0 mob:hidden">
         <div className="relative flex justify-center items-center">
           <Image
             src={hiresvg}
