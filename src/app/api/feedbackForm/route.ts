@@ -6,7 +6,9 @@ export async function POST(request: NextRequest) {
     const { message, name, email } = await request.json();
 
     const transport = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
       auth: {
         user: "fahimjsdeveloper@gmail.com",
         pass: "qtlk zkpk oaue ognq",
