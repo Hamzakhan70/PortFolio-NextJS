@@ -45,19 +45,9 @@ export async function POST(request: NextRequest) {
 `,
     };
 
-    transport.sendMail(mailoptionsToAdmin, (error, info) => {
-      if (error) {
-        return console.log("Error in sending email to admin: " + error);
-      }
-      console.log("Email sent To admin: " + info.response);
-    });
+    await transport.sendMail(mailoptionsToAdmin);
 
-    transport.sendMail(mailoptionsToUser, (error, info) => {
-      if (error) {
-        return console.log("Error in sending email to user: " + error);
-      }
-      console.log("Email sent to user: " + info.response);
-    });
+    await transport.sendMail(mailoptionsToUser);
     return NextResponse.json({
       success: true,
       message: "Email sent successfully!",
