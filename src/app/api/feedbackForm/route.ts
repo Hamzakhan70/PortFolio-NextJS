@@ -1,3 +1,4 @@
+import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -10,14 +11,14 @@ export async function POST(request: NextRequest) {
       port: 587,
       secure: false,
       auth: {
-        user: "fahimjsdeveloper@gmail.com",
-        pass: "qtlk zkpk oaue ognq",
+        user: process.env.Email_User,
+        pass: process.env.Email_Password,
       },
     });
-    console.log(email);
+    // console.log(email);
     const mailoptionsToAdmin = {
-      from: "fahimjsdeveloper@gmail.com",
-      to: "fahimjsdeveloper@gmail.com",
+      from: process.env.Email_User,
+      to: process.env.Email_User,
       subject: "You have a new feedback",
       text: `You have a new contact form submission from:
       Name: ${name}
@@ -26,7 +27,7 @@ export async function POST(request: NextRequest) {
     };
 
     const mailoptionsToUser = {
-      from: "fahimjsdeveloper@gmail.com",
+      from: process.env.Email_User,
       to: email,
       subject: "Thank You for Your Feedback",
       //   text: "Thank you for reaching out to us. We will get back to you shortly.",
@@ -48,12 +49,9 @@ export async function POST(request: NextRequest) {
     await transport.sendMail(mailoptionsToAdmin);
 
     await transport.sendMail(mailoptionsToUser);
-    return NextResponse.json({
-      success: true,
-      message: "Email sent successfully!",
-    });
+    return NextResponse.json({ error: "" });
   } catch (error) {
     console.error("Error in POST handler:", error);
-    return NextResponse.json({ error: "Server error" });
+    return NextResponse.json({ "Server error": error });
   }
 }

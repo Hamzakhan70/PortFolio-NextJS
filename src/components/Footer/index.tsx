@@ -12,7 +12,7 @@ function Footer() {
   return (
     <div
       className="flex justify-center items-center p-10 mob:px-7 border-t-2"
-      id="#contact-me"
+      id="contact-me"
     >
       <div className="w-full max-w-[1100px] mob:max-w-full flex flex-col gap-[20px] justify-center items-center">
         <div className="flex justify-between items-center mob:flex-col mob:items-start w-full mob:justify-center mob:gap-4">
