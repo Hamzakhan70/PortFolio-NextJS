@@ -40,9 +40,9 @@ function Footer() {
                 <MdEmail className="text-[40px] text-white" />
               </Link>
 
-              <Link href="https://github.com/faheem-ul">
+              <a href="mailto: fahimjsdeveloper@gmail.com">
                 <Text>fahimjsdeveloper@gmail.com</Text>
-              </Link>
+              </a>
             </div>
             <div className="flex gap-3 items-center mb-5">
               <Link href="tel:03494820657">
