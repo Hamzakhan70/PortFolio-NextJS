@@ -27,7 +27,7 @@ export default function Home() {
       <Skills />
       <Education />
       <FeedbackForm />
-      <div className="fixed bottom-[240px] right-0 z-50 mob:top-0 mob:hidden">
+      <div className="fixed bottom-0 right-0 z-50 mob:top-0 mob:hidden">
         <div className="relative flex justify-center items-center">
           <Image
             src={hiresvg}
