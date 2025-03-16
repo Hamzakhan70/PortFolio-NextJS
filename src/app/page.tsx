@@ -36,7 +36,7 @@ export default function Home() {
           ></Image>
           <div className="absolute w-full h-full top-0 left-0 flex justify-center items-center ">
             <LinkButton
-              href="mailto:fahimjsdeveloper@gmail.com"
+              href="mailto:hamzaarifkhan70@gmail.com"
               className="w-[80px] h-[80px] mob:w-[50px] mob:h-[50px] p-0 hover:text-white flex justify-center items-center text-[17px] mob:text-[10px] rounded-full"
             >
               Hire Me
@@ -44,7 +44,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <Test /> */}
     </>
   );
 }
