@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <>
+      
         <body className={`${poppins.variable}`}>
           <ToastProvider>
             <AosProvider>
