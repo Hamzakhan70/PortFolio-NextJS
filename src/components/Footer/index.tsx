@@ -18,44 +18,44 @@ function Footer() {
         <div className="flex justify-between items-center mob:flex-col mob:items-start w-full mob:justify-center mob:gap-0">
           <div className="">
             <div className="flex gap-3 items-center mb-5">
-              <Link href="https://github.com/faheem-ul">
+              <Link href="https://github.com/Hamzakhan70">
                 <FaGithub className="text-[40px] text-white" />
               </Link>
-              <Link href="https://github.com/faheem-ul">
-                <Text>github.com/faheem-ul</Text>
+              <Link href="https://github.com/Hamzakhan70">
+                <Text>github.com/Hamzakhan70</Text>
               </Link>
             </div>
             <div className="flex gap-3 items-center mb-5">
               <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
                 <FaLinkedin className="text-[40px] text-white" />
               </Link>
-              <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
-                <Text>linkedin.com/in/fahim</Text>
+              <Link href="https://www.linkedin.com/in/hamza-khan-87064319b">
+                <Text>linkedin.com/in/Hamza</Text>
               </Link>
             </div>
           </div>
           <div className="">
             <div className="flex gap-3 items-center mb-5">
-              <Link href="https://github.com/faheem-ul">
+              <Link href="https://github.com/Hamzakhan70">
                 <MdEmail className="text-[40px] text-white" />
               </Link>
 
-              <a href="mailto: fahimjsdeveloper@gmail.com">
-                <Text>fahimjsdeveloper@gmail.com</Text>
+              <a href="mailto: Hamzaarifkhan70@gmail.com">
+                <Text>Hamzaarifkhan70@gmail.com</Text>
               </a>
             </div>
             <div className="flex gap-3 items-center mb-5">
-              <Link href="tel:03494820657">
+              <Link href="tel:03056761558">
                 <IoCall className="text-[40px] text-white" />
               </Link>
-              <Link href="tel:03494820657">
-                <Text>+92-349-4820657</Text>
+              <Link href="tel:03056761558">
+                <Text>+92-305-6761558</Text>
               </Link>
             </div>
           </div>
         </div>
         <Text className="text-[22px] text-white mob:text-center mob:text-[15px]">
-          Copyright © Fahim Ul Hassan Aziz
+          Copyright © Hamza Arif Khan
         </Text>
       </div>
     </div>

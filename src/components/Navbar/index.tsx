@@ -43,13 +43,13 @@ const Navbar = () => {
           </LinkButton>
         </div>
         <div className="flex gap-2">
-          <Link href="https://github.com/faheem-ul">
+          <Link href="http://github.com/Hamzakhan70">
             <FaGithub className="text-[30px] text-white hover:mt-[-5px] duration-200" />
           </Link>
-          <Link href="https://www.linkedin.com/in/fahim-ul-hassan-3871452a0/">
+          <Link href="http://www.linkedin.com/in/hamza-khan-87064319b">
             <FaLinkedin className="text-[30px] text-white hover:mt-[-5px] duration-200" />
           </Link>
-          <Link href="mailto:fahimjsdeveloper@gmail.com">
+          <Link href="mailto:Hamzaarifkhan70@gmail.com">
             <MdEmail className="text-[30px] text-white hover:mt-[-5px] duration-200" />
           </Link>
         </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
               <Image src={hiresvg} alt="hire" className="animate-spin" />
               <div className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-solid p-0 text-[16px] font-semibold text-light shadow-md  mob:h-[2.7rem] mob:w-[2.7rem] mob:text-[10px]">
                 <LinkButton
-                  href="mailto:fahimjsdeveloper@gmail.com"
+                  href="mailto:Hamzaarifkhan70@gmail.com"
                   className="w-[80px] h-[80px] mob:w-[50px] mob:h-[50px] p-0 hover:text-white flex justify-center items-center text-[17px] mob:text-[10px] rounded-full"
                 >
                   Hire Me
@@ -98,7 +98,7 @@ const Navbar = () => {
               </div>
 
               <LinkButton
-                href="mailto:fahimjsdeveloper@gmail.com"
+                href="mailto:Hamzaarifkhan70@gmail.com"
                 className="absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-solid border-dark bg-dark p-0 text-[16px] font-semibold text-light shadow-md  dark:bg-light dark:text-dark  mob:h-[2.7rem] mob:w-[2.7rem] mob:text-[10px]"
               >
                 Hire Me
