@@ -16,7 +16,7 @@ const HomePageHero = () => {
 
   const [text] = useTypewriter({
     words: [
-      " Hey 👋! This is Faheem",
+      " Hey 👋! This is Hamza_Khan",
       " Lover of Full-Stack Craft ✨|",
       "Turning your Ideas into Digital Reality 💡|",
     ],
@@ -162,7 +162,7 @@ const HomePageHero = () => {
           Resume
         </Button>
         <LinkButton
-          href="mailto:fahimjsdeveloper@gmail.com"
+          href="mailto:Hamzaarifkhan70@gmail.com"
           className=" bg-transparent text-[20px] mt-2 px-0 py-0 hover:opacity-[0.7] underline border-none text-white hover:bg-transparent"
         >
           Contact

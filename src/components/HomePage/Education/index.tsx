@@ -41,13 +41,13 @@ const Education = () => {
                   as="h2"
                   className=" text-[30px] mob:text-[22px] mob:leading-[30px] mob:mb-1 text-[#FFF]/90"
                 >
-                  Bachelor of Computer Science (BSCS)
+                  Bachelor of Sciences in Information Technology (BSIT)
                 </Text>
 
                 <Text className="text-[19px] mob:text-[16px] font-semibold text-[#33BECF]">
-                  Government College University (GCU), Lahore --{" "}
+                  University of the Punjab (PU), Lahore --{" "}
                   <span className="text-[17px] text-[#B8B9B9] mob:text-[14px]">
-                    (2019 - 2023)
+                    (2018 - 2022)
                   </span>
                 </Text>
                 <Text className="text-[22px] mob:text-[19px] text-[#B8B9B9] my-2 font-semibold">
@@ -77,9 +77,9 @@ const Education = () => {
                 Intermediate in Sciences
               </Text>
               <Text className="text-[19px] mob:text-[16px] font-semibold text-[#33BECF]">
-                Superior Group of College, Pattoki --{" "}
+                Government Post Graduate College, Lahore --{" "}
                 <span className="mob:text-[14px] text-[17px] text-[#B8B9B9]">
-                  (2017 - 2019)
+                  (2018 - 2018)
                 </span>
               </Text>
               <Text className="text-[16px]  text-[#fff] my-2 font-medium">

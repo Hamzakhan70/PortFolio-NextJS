@@ -27,7 +27,7 @@ const HomeAbout: React.FC = () => {
           BIOGRAPHY
         </Text>
         <Text className="max-w-[1200px] mob:text-center mob:text-[16px] mob:leading-5">
-          Hello ! This is Faheem. I&apos;m a full stack web developer with a
+          Hello ! This is Hamza!. I&apos;m a full stack web developer with a
           passion for crafting stunning, functional, and user-centric digital
           journeys. With a solid 1-year journey in the field, I have always
           looking for innovative ways to bring clients&apos; visions to life.{" "}
