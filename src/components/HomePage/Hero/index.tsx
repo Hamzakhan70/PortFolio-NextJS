@@ -27,7 +27,7 @@ const HomePageHero = () => {
   });
 
   const handleOpenPdf = () => {
-    window.open("/faheem-mern-stack.pdf");
+    window.open("/HAMZA-ARIF-KHAN.pdf");
   };
 
   // useEffect(() => {

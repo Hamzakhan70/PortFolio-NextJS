@@ -18,7 +18,6 @@ export default function Home() {
       <div id="home-hero">
         <HomePageHero />
       </div>
-
       <div id="about-section">
         <HomeAbout />
       </div>

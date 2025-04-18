@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,18 +10,14 @@ import "swiper/css/pagination";
 
 import "./styles.css";
 
-import SlideOne from "./slides/SlideOne";
-import SlideTwo from "./slides/SlideTwo";
-import SlideThree from "./slides/SlideThree";
-import fitfood from "../../../../../public/images/my-fit-food.png";
-import stndrd from "../../../../../public/images/stndrd.png";
-import foundation from "../../../../../public/images/1890-foundation.png";
+
+import meta1st from "../../../../../public/images/meta1st.png";
+import elnova from "../../../../../public/images/elnova.png";
+import ecom from "../../../../../public/images/ecommerce store.png";
 
 import SlideResubale from "./slides/SlideResubale";
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
-import FitFoodContribution from "../ProjectsContribution/my-fit-food";
-import FitFoodAbout from "../AboutProjects/my-fit-food";
 
 export default function ProjectsSlider() {
   return (
@@ -50,128 +45,128 @@ export default function ProjectsSlider() {
         modules={[EffectCoverflow, Pagination, Autoplay]}
         className="mySwiper"
       >
+
         <SwiperSlide className="projects-swiper">
           <SlideResubale
-            projectName="My Fit Food"
-            href="https://www.myfitfoods.com/"
-            projectSummary="Transform your meal planning with My Fit Food. Enjoy a seamless
-          experience through tailored meal options and personalized dietary
-          filters, all supported by easy-to-use tools and smooth e-commerce
-          integration."
-            ImageSrc={fitfood}
-            ProjectsContributionTitle="My contiubutions for My Fit Food are;"
-            aboutProject="This is About Fit Food Project"
+            projectName="Earn_Store Mern"
+            href="https://earnstoremern-production-be9c.up.railway.app/"
+            projectSummary="Earn_Store is a robust and responsive MERN-based e-commerce platform designed to deliver a seamless shopping experience. It supports product listing, cart functionality, user authentication, and secure payments — all wrapped in a clean, user-friendly interface."
+            ImageSrc={ecom}
+            ProjectsContributionTitle="My contributions to Earn_Store include:"
+            aboutProject="This project is a complete e-commerce web application built from the ground up using the MERN stack."
             projectsContributionContent={[
-              "Built the Entire UI Using Prismic: Leveraged Prismic as a content management system to design and implement a dynamic and responsive user interface, ensuring a seamless experience across devices.",
-              "Streamlined Content Management: Integrated Prismic's features to allow easy content updates and enhanced flexibility for non-technical users.",
-              "Focus on User-Centric Design: Prioritized intuitive navigation and visual appeal while aligning with the project's branding and goals.",
+              "Developed the full-stack e-commerce app using MongoDB, Express.js, React, and Node.js (MERN), with modular and scalable architecture.",
+              "Built dynamic product pages, shopping cart, and real-time inventory handling.",
+              "Implemented secure user authentication, registration, and login flows with role-based access control.",
+              "Integrated Stripe for secure payment processing and order flow with confirmation pages.",
+              "Created RESTful APIs for product, user, cart, and order management.",
+              "Managed state across the app using Redux Toolkit and persisted data through localStorage for a smoother UX.",
+              "Deployed the complete platform on Railway, with environmental variable management and production-ready performance tuning.",
             ]}
             aboutContent={[
-              "Project Overview - My Fit Food Web App: The 'My Fit Food' project is a wellness-focused platform designed to help users achieve their fitness goals through personalized meal plans, nutritional insights, and wellness tips. It offers a seamless and user-friendly interface, enabling users to explore, customize, and adopt healthier dietary habits. The project combines innovative technology with a focus on health to promote a balanced and sustainable lifestyle.",
+              "Project Overview – Earn_Store Mern: Earn_Store is an end-to-end e-commerce solution targeting fast, secure, and personalized shopping experiences. With a scalable backend and an optimized frontend, it supports real-time updates, persistent sessions, and admin product management.",
               "Challenges:",
-              "Working with Headless Prismic UI ; Adapting to Prismic, a headless CMS, was a significant challenge as it was a new technology. Understanding its structure, integrating dynamic content, and ensuring a seamless user interface required a steep learning curve and problem-solving skills.",
-              "Balancing Design and Functionality ; Achieving an aesthetic, user-friendly interface without compromising on functionality or performance, while ensuring the design allowed content updates in the CMS to dynamically reflect in the UI and maintain overall functionality.",
+              "Building a custom checkout system with integrated Stripe APIs while managing order confirmations, errors, and session persistence.",
+              "Creating a reusable and optimized Redux state flow to minimize re-renders and API calls.",
+              "Handling user access and protected routes to separate admin and regular user roles effectively.",
               "Key Features:",
-              "Personalized Meal Plans ; Users can access tailored meal plans based on their fitness goals and dietary preferences.",
-              "Customizable Preferences ;  Users can adjust meal plans or exclude specific ingredients to suit their dietary needs.",
-              "Educational Content; Blogs ; tips, and articles to inspire healthier lifestyle choices and educate users on nutrition.",
-              "Integration with Headless CMS ; Dynamic content updates through Prismic, ensuring consistency and flexibility.",
-              "Implementation Details:",
-              "Front-end ; We utilized Next.js for rapid rendering, TypeScript for enhanced reliability, Tailwind CSS for efficient UI development, whereas Prismic is used for the content management.",
-              "Backend; Shopify's GraphQL API for seamless integration.",
-              "Checkout Customization; Leveraged Shopify's checkout extensibility and GraphQL Branding API.",
-              "State Management ; React Query for efficient cart queries and Jotai for React state management",
-              "Conclusion: In conclusion, the 'My Fit Food' project successfully integrates innovative technology with health-focused content to deliver a personalized and engaging platform for users. By leveraging tools like Next.js, Prismic, and Shopify's APIs, the app ensures a seamless and dynamic user experience. Despite challenges such as adapting to new technologies and balancing design with functionality, the project provides a robust, scalable solution that empowers users to make informed dietary choices and adopt healthier lifestyles.",
+              "Full E-commerce Flow – Product browsing, search, cart management, and secure checkout.",
+              "Stripe Integration – Seamless payment gateway with transaction history and user receipts.",
+              "Admin Dashboard – Add, update, or delete products; view orders and manage inventory.",
+              "Authentication – Secure login/register system with protected routes and session tracking.",
+              "Responsive Design – Mobile-first, user-friendly UI with clean UX using React and Tailwind CSS.",
+              "Implementation Stack:",
+              "Front-end: React, Redux Toolkit, Tailwind CSS.",
+              "Back-end: Node.js, Express.js, MongoDB, and Mongoose for data modeling.",
+              "Payment System: Stripe for handling secure transactions.",
+              "Deployment: Railway with continuous integration and environment management.",
+              "Conclusion: The Earn_Store Mern project demonstrates the capability to develop a full-scale production-ready web application, integrating modern e-commerce features with performance, security, and usability in mind. This project showcases my end-to-end understanding of building and deploying robust web apps using the MERN stack.",
             ]}
           />
         </SwiperSlide>
+
         <SwiperSlide>
           <SlideResubale
-            projectName="STNDRD"
-            href="https://www.stndrd.app/"
-            projectSummary="Elevate your fitness journey with STNDRD by Chris Bumstead. Experience
-          premium training programs, top-quality apparel, and expert guidance
-          that empowers you to achieve your bodybuilding goals with style and
-          precision."
-            ImageSrc={stndrd}
-            ProjectsContributionTitle="My contribution in STNDRD by Chris Bumstead is as follows;"
-            aboutProject="This is about Standrd Project"
+            projectName="Meta1st"
+            href="https://meta1st.ai/"
+            projectSummary="Meta1st is an AI-powered cybersecurity platform that fortifies the human layer of organizations by providing real-time training and tools to combat phishing, social engineering, and email-based threats."
+            ImageSrc={meta1st}
+            ProjectsContributionTitle="My contribution to Meta1st includes:"
+            aboutProject="Meta1st is an innovative SaaS platform focused on reducing human-related cybersecurity risks through AI-driven solutions."
             projectsContributionContent={[
-              "Designed and Developed the User Dashboard UI: Built an intuitive and responsive user interface for the dashboard using Next.js and Tailwind CSS, ensuring cross-device compatibility.",
-              "Firebase Authentication Integration: Developed the login and signup functionality using Firebase Authentication, enabling secure user registration and login with email and password, while implementing session management for maintaining user state and handling errors.",
-              "Integrated Profile Picture Upload Feature: Implemented a user profile picture upload functionality, integrating with Firebase for storage and retrieval. Developed the functionality that a user can crop its image while uploading.",
-              "Dynamic Screens Based on User State: Developed multiple screens for the checkout page, including the plan selection screen, signup/login screen, payment screen, and subscription success screen, which are conditionally displayed based on the user's state. Utilized Zustand as a state management solution to efficiently handle and manage the user's state throughout the checkout process.",
-              "Scroll-Based Animation on Landing Page: Developed scroll-based animations on the landing page using GSAP (GreenSock Animation Platform), creating engaging visual effects that activate as the user scrolls, enhancing the overall user experience and interactivity.",
-              "Reusable Drawer for User Information: Developed a reusable drawer to display different user information, which was utilized multiple times across the app for consistent user experience and efficient content presentation.",
-              "Implemented Landing Page for Black Friday: Developed a promotional landing page with a real-time countdown timer component to enhance user engagement.",
+              "Developed the front-end interface using React and Tailwind CSS, ensuring a responsive and user-friendly design.",
+              "Integrated Firebase Authentication for secure user login and registration processes.",
+              "Implemented real-time email threat analysis using advanced AI algorithms to detect and alert users about potential risks.",
+              "Created interactive training modules to educate users on identifying and responding to phishing and other cyber threats.",
+              "Set up Stripe for secure payment processing and subscription management.",
+              "Utilized GSAP for engaging animations on the landing page to enhance user experience.",
+              "Built a dynamic dashboard for administrators to monitor user engagement and threat reports.",
             ]}
             aboutContent={[
-              "Project Overview - STNDRD Fitness Web App: The STNDRD Fitness Web App was designed to elevate fitness enthusiasts' experiences by providing a platform tailored to their goals and aspirations. Created for Cbum's fitness community, the app serves as a hub for fitness resources, interactive tools, and personalized features. It offers a seamless way for users to manage their profiles, track fitness progress, and engage with premium content and programs. By integrating modern design principles with robust functionalities, the platform ensures an engaging and user-friendly experience, empowering users to achieve their fitness ambitions effectively. With its intuitive interface and comprehensive features, the STNDRD Fitness Web App establishes itself as a game-changing tool for those passionate about fitness and well-being.",
+              "Project Overview - Meta1st Cybersecurity Platform: Meta1st is designed to empower organizations by strengthening their human defense layer against cyber threats. The platform offers AI-driven tools like Analyse1st for real-time email threat detection, Learn1st for continuous user education, and Phish1st for simulating phishing attacks to train employees effectively.",
               "Challenges:",
-              "Visual Engagement ; The primary challenge was to create a visually engaging web app, incorporating scroll-based animations that effectively showcased our subscription-based fitness services.",
-              "Seamless Payment Processing ; Implementing an intuitive user experience while seamlessly integrating payment processing through Stripe required meticulous planning to ensure both security and user-friendliness.",
-              "Scalability for Growing User Base ; Designing the app's architecture to handle a growing number of users without performance degradation. Ensuring that the web app remains fast and responsive, even with heavy media content and user interactions.",
-              "Responsive Design for All Devices ; Making the app fully responsive so it performs well across desktops, tablets, and smartphones.",
-              "Tight Deadlines ; The project had a tight schedule, requiring efficient time management.",
-              "Cross-Browser Compatibility ; Ensuring seamless functionality across various browsers.",
-              "Scope and Solution: ",
-              "Captivating Landing Page; We introduced a captivating landing page powered by GSAP animations to immediately engage visitors.",
-              "Subscription Management ; Users can effortlessly explore subscription plans and manage their profiles.",
-              "Secure Payments ; The seamless integration of Stripe ensures secure and hassle-free subscription payments.",
+              "Human Error Mitigation: Addressing the high percentage of cyber incidents caused by human mistakes.",
+              "Real-Time Threat Detection: Developing systems capable of analyzing and responding to threats as they occur.",
+              "User Engagement: Ensuring that training modules are engaging and effectively improve user awareness.",
+              "Scalability: Building a platform that can scale with the growing needs of diverse organizations.",
+              "Compliance: Assisting organizations in meeting regulatory requirements like the Digital Operational Resilience Act (DORA).",
+              "Scope and Solution:",
+              "Comprehensive Training Modules: Interactive lessons and quizzes tailored to various learning styles.",
+              "Real-Time Email Analysis: Tools that provide instant feedback on potential email threats.",
+              "Phishing Simulations: Regularly scheduled simulations to test and improve employee responses.",
+              "Administrative Dashboard: Centralized control panel for monitoring and managing organizational cybersecurity posture.",
               "Key Features:",
-              "Captivating Landing Page ;Dynamic GSAP animations on the landing page immediately capture users' attention.",
-              "Secure Payments; Subscription plans powered by Stripe ensure secure and seamless payments.",
-              "Efficient Revenue Management; Integration of RevenueCat streamlined revenue management.",
-              "User-Centric Dashboard; A user dashboard for subscription management and preferences.",
-              "Personalized Engagement; Klaviyo integration ensures personalized email marketing and enhanced user engagement.",
-              "Modern UI; Utilization of Next.js, TypeScript, Tailwind CSS, and GSAP creates a modern and dynamic user interface.",
+              "AI-Powered Tools: Leveraging artificial intelligence to enhance threat detection and user training.",
+              "User-Centric Design: Focused on creating an intuitive and accessible user experience.",
+              "Regulatory Compliance Support: Features designed to help organizations adhere to cybersecurity regulations.",
+              "Continuous Learning: Regular updates to training content to address emerging threats.",
               "Implementation Details:",
-              "Front-end ; We utilized Next.js for rapid rendering, TypeScript for enhanced reliability, Tailwind CSS for efficient UI development, and GSAP for dynamic animations.",
-              "Authentication and Data Management; Firebase played a crucial role in authentication, data management, file storage, and real-time updates.",
-              "Back-end ; Node.js and Express were integrated with Firebase Cloud Functions for API development and server-side logic.",
-              "Payment Processing; The seamless integration of Stripe's API on both client and server sides ensured secure subscription payments.",
-              "Conclusion: The success of the STNDRD Web App project can be attributed to meticulous design, seamless integrations, and a modern tech stack. Our web app effectively captured users' interest and streamlined their access to fitness subscriptions. Through Next.js, TypeScript, Tailwind CSS, GSAP animations, Stripe, and Klaviyo integration, the web app achieved a harmonious blend of functionality and engagement, establishing itself as a standout in the fitness website landscape. STNDRD invites you to embark on this transformative fitness journey—a new era of fitness awaits.",
+              "Front-end: Built with React and Tailwind CSS for a modern and responsive interface.",
+              "Back-end: Utilized Nest.js for server-side operations.",
+              "Authentication: Implemented Firebase Authentication for secure user management.",
+              "Payment Processing: Integrated Stripe for handling subscriptions and payments.",
+              "Animations: Used GSAP to create engaging animations enhancing the visual appeal.",
+              "Conclusion: Meta1st stands out as a comprehensive solution for organizations aiming to bolster their cybersecurity defenses by focusing on the human element. Through its AI-driven tools and continuous training modules, it effectively reduces the risk of cyber threats originating from human error."
             ]}
           />
-          {/* <div className="flex gap-10"> 
-            <FitFoodContribution />
-            <FitFoodAbout />
-          </div> */}
         </SwiperSlide>
+
         <SwiperSlide>
           <SlideResubale
-            projectName="1890 Foundation"
-            href="https://www.1890foundation.org/"
-            projectSummary=" Support and empower the next generation with 1890 Foundation.
-          Championing historically Black colleges and universities, this
-          platform provides vital resources, scholarships, and opportunities to
-          enhance educational outcomes and foster success for students across
-          the nation."
-            ImageSrc={foundation}
-            ProjectsContributionTitle="My contribution in 1890 Foudation is as follows;"
-            aboutProject="This is about 1890 Project"
+            projectName="ElNova"
+            href="https://www.elnova.ca/en/"
+            projectSummary="ElNova delivers intelligent energy solutions that empower residential, commercial, and industrial users to manage energy sustainably through advanced technologies, energy storage, and electric mobility systems."
+            ImageSrc={elnova}
+            ProjectsContributionTitle="My contribution to ElNova includes:"
+            aboutProject="ElNova is a modern energy tech company revolutionizing power management through innovative battery systems, renewable energy integration, and AI-driven control platforms."
             projectsContributionContent={[
-              "Dynamic Sidebar with Mobile Responsiveness: Created a sidebar with conditional rendering for tab navigation and a hamburger menu for mobile users, ensuring a smooth user experience with auto-closing functionality on tab selection.",
-              "Backend Integrations: Developed an API using Nodemailer to handle form submissions, sending responses to both the user and admin via email.",
-              "UI Enhancements: Created various interactive sliders to enhance user engagement and deliver a captivating UI experience.",
+              "Developed and maintained the front-end UI of ElNova’s website and mobile application using React, Tailwind CSS, and Ionic.",
+              "Integrated real-time API data to display dynamic product specifications and energy usage stats.",
+              "Created custom components for interactive forms, user inquiries, and responsive layouts across desktop and mobile.",
+              "Worked closely with backend developers to ensure seamless integration of real-time system data and user management features.",
+              "Contributed to multilingual support implementation, including English and French localizations.",
+              "Optimized website for performance, accessibility, and mobile responsiveness."
             ]}
             aboutContent={[
-              "Project Overview - 1890 Foundation Web App: The 1890 Foundation is dedicated to advancing the mission of the 1890 Historically Black Colleges and Universities (HBCUs) by enhancing their capacity to deliver high-quality education, promote research, and foster community engagement. Established to provide resources and support to these institutions, the foundation focuses on expanding access to academic and professional development opportunities for students, faculty, and staff. By strengthening partnerships, facilitating innovative programs, and securing funding, the 1890 Foundation aims to empower HBCUs to continue playing a pivotal role in shaping the future of higher education and society. Through its initiatives, the foundation supports the growth and sustainability of these historically significant institutions, ensuring they remain vibrant centers of learning, culture, and excellence.",
+              "Project Overview – ElNova: ElNova is an energy innovation company offering a range of solutions for energy storage, electric vehicle infrastructure, and smart energy systems for homes and businesses. The company is driven by the goal of making energy cleaner, more efficient, and accessible.",
               "Challenges:",
-              "Working with NodeMailer ; A key challenge while working with 1890 was integrating Nodemailer, as it was outside of my prior experience. However, I successfully learned and implemented it to handle email notifications effectively.",
-              "Tight Deadlines ; The project had a tight schedule, requiring efficient time management.",
-              "Cross-Browser Compatibility ; Ensuring seamless functionality across various browsers.",
+              "Multilingual Functionality: Ensuring full support for both English and French interfaces.",
+              "Responsive Web & Mobile Design: Adapting the platform across a wide range of devices and screen sizes using Ionic for mobile and React for web.",
+              "Real-Time Product Display: Integrating dynamic data to display live updates about products and solutions.",
               "Key Features:",
-              "Nodemailer Integration;  Allows seamless communication by sending automated emails for form submissions, registrations, and notifications to both users and admins.",
-              "Donation System; A secure payment system integrated for users to make donations to support the foundation and its programs.",
-              "Responsive Design; Ensures the website is fully functional and visually appealing across all devices, providing an optimized user experience on both desktop and mobile.",
+              "Smart Energy Solutions: Interactive showcase of energy storage, smart panels, and EV charging systems.",
+              "Multilingual Support: Fully translated UI for French and English-speaking users.",
+              "Contact and Inquiry Forms: Interactive forms with integrated backend support to handle customer outreach and quote requests.",
               "Implementation Details:",
-              "Front-end ; We utilized Next.js for rapid rendering, TypeScript for enhanced reliability, Tailwind CSS for efficient UI development, and Animate On Scroll Library for scroll base animations.",
-              "Back-end ; Node.js and Express were used for API development and server-side logic.",
-              "Conclusion: In conclusion, the 1890 Foundation Web App successfully integrates advanced features such as Nodemailer for seamless communication, a secure donation system, and a responsive design to enhance user experience across devices. Despite challenges like tight deadlines and cross-browser compatibility, the project was completed efficiently, leveraging modern technologies like Next.js, TypeScript, and Node.js. The foundation's web platform now effectively supports its mission of empowering HBCUs and providing valuable resources to students, faculty, and staff.",
+              "Front-end: Built using React.js, Tailwind CSS, and Ionic Framework for a consistent cross-platform experience.",
+              "Back-end: Integrated with Nest.js APIs and dynamic product data sources.",
+              "Localization: Implemented internationalization (i18n) using language files for bilingual user experience.",
+              "Mobile App: Developed using Ionic to provide access to ElNova’s energy platform on mobile devices.",
+              "Conclusion: ElNova stands out as a forward-thinking platform empowering users to make smarter energy decisions. Through clean UI, mobile accessibility, multilingual support, and real-time system information, ElNova delivers a seamless experience for users looking to transition into a more energy-efficient future."
             ]}
           />
         </SwiperSlide>
+
       </Swiper>
     </div>
   );

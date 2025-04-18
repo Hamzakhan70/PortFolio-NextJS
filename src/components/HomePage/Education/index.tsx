@@ -47,7 +47,7 @@ const Education = () => {
                 <Text className="text-[19px] mob:text-[16px] font-semibold text-[#33BECF]">
                   University of the Punjab (PU), Lahore --{" "}
                   <span className="text-[17px] text-[#B8B9B9] mob:text-[14px]">
-                    (2018 - 2022)
+                    (2019 - 2023)
                   </span>
                 </Text>
                 <Text className="text-[22px] mob:text-[19px] text-[#B8B9B9] my-2 font-semibold">
@@ -77,9 +77,9 @@ const Education = () => {
                 Intermediate in Sciences
               </Text>
               <Text className="text-[19px] mob:text-[16px] font-semibold text-[#33BECF]">
-                Government Post Graduate College, Lahore --{" "}
+                Government Post Graduate College, Layyah --{" "}
                 <span className="mob:text-[14px] text-[17px] text-[#B8B9B9]">
-                  (2018 - 2018)
+                  (2017 - 2019)
                 </span>
               </Text>
               <Text className="text-[16px]  text-[#fff] my-2 font-medium">

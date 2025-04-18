@@ -16,6 +16,12 @@ import reactQuery from "../../../../public/images/react-query.png";
 import Node from "../../../../public/images/nodejs.f4675121.svg";
 import firebase from "../../../../public/images/firebase.svg";
 import express from "../../../../public/images/expressjs.svg";
+import Shadcn from "../../../../public/images/shadecn.png";
+import MongoDB from "../../../../public/images/mongodb.png";
+import SQL from "../../../../public/images/sql.png";
+import Bootstrap from "../../../../public/images/bootstrap.jpg";
+import Python from "../../../../public/images/python.png";
+import Nest from "../../../../public/images/nest.png";
 
 const Skills = () => {
   const [hoverSkill, sethoverSkill] = useState<number | null>(null);
@@ -24,27 +30,39 @@ const Skills = () => {
     html,
     css,
     chakraui,
+    Bootstrap,
     tailwindcss,
+Shadcn,
     js,
     react,
     nextjs,
     reactQuery,
     Node,
+    Nest,
     firebase,
+    MongoDB,
+    SQL,
     express,
+    Python
   ];
   const skillsNameArray = [
     "HTML",
     "CSS",
     "Chakra UI",
+    "Bootstrap",
     "Tailwind CSS",
+    "Shadcn",
     "JavaScript",
     "React",
     "Next JS",
     "React Query",
     "Node JS",
+    "Nest JS",
     "Firebase",
+    "MongoDB",
+    "SQL",
     "Express",
+    "Python"
   ];
 
   const getAnimationDirection = (index: number) => {
