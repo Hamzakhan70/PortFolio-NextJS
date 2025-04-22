@@ -102,8 +102,51 @@ const Experience = () => {
           // markers:true
         },
       });
-    };
 
+      // ---------------
+
+      // Panel 3 animation
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".panel3",
+            start: "left right",
+            end: "right left",
+            scrub: true,
+            containerAnimation: timeline,
+          },
+        })
+        .from("#workCard3", {
+          scale: 0,
+          opacity: 0,
+        })
+        .to("#workCard3", {
+          scale: 0.5,
+          opacity: 0.5,
+        });
+
+      // Panel 4 animation
+      // gsap
+      //   .timeline({
+      //     scrollTrigger: {
+      //       trigger: ".panel4",
+      //       start: "left right",
+      //       end: "right left",
+      //       scrub: true,
+      //       containerAnimation: timeline,
+      //     },
+      //   })
+      //   .from("#workCard4", {
+      //     scale: 0,
+      //     opacity: 0,
+      //   })
+      //   .to("#workCard4", {
+      //     scale: 0.5,
+      //     opacity: 0.5,
+      //   });
+
+      // -------------
+    };
     const firstCardAnimation = () => {
       gsap
         .timeline({
@@ -162,15 +205,15 @@ const Experience = () => {
               className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
             >
               <Text className="text-[30px] font-semibold mob:text-[22px]">
-                Junior Software Developer{" "}
+                Junior Mern Stack Developer{" "}
                 <span className="text-[#33BECF]">
                   <Link href="https://www.linkedin.com/company/s93partner/">
-                    @S93 Partner
+                    4XPORTAL
                   </Link>
                 </span>
               </Text>
               <Text className="text-[20px] font-semibold text-[#B8B9B9] mt-1">
-                January (2024) - Present
+                October (2024) - Present
               </Text>
               <Text className="mt-3 text-[18px]">
                 As a Junior Web Developer, my primary focus has been on
@@ -184,17 +227,17 @@ const Experience = () => {
 
               <ul className=" text-white list-disc text-[18px] mt-4 px-4 font-poppins">
                 <li className="mb-2">
-                  Designed and developed the user dashboard for the STNDRD app
-                  and contributed to building the STNDRD website.
+                  Designed and developed the user dashboard for the ATARIA2.0
+                  and contributed to building the HXFX website.
                 </li>
                 <li className="mb-2">
                   Built the entire UI for over 5 websites using TypeScript,
-                  Next.js, React Query, Tailwind, and GSAP for animations.
-                  Ensured code reusability and maintained clean, efficient code
-                  to simplify debugging and future development.
+                  React.js / Next.js, React Query, Tailwind, and GSAP for
+                  animations. Ensured code reusability and maintained clean,
+                  efficient code to simplify debugging and future development.
                 </li>
                 <li className="mb-2">
-                  Worked with Firebase for managing user data, including profile
+                  Worked with MongoDB for managing user data, including profile
                   images, storing and retrieving data, and implementing
                   authentication.
                 </li>
@@ -209,6 +252,50 @@ const Experience = () => {
           <div className="panel2 flex w-full shrink-0 items-center justify-center">
             <div
               id="workCard2"
+              className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+            >
+              <Text className="text-[30px] font-semibold mob:text-[23px]">
+                Associate Software Engineer{" "}
+                <span className="text-[#33BECF]">
+                  <Link href="https://www.linkedin.com/company/seebizpk/posts/?feedView=all">
+                    @Ekkel.Ai
+                  </Link>
+                </span>
+              </Text>
+              <Text className="text-[20px] mob:text-[16px] font-semibold text-[#B8B9B9] mt-1">
+                February (2024) - September (2024)
+              </Text>
+              <Text className="mt-3 text-[18px]">
+                As an Associate Software Engineer, I am responsible for
+                developing and maintaining web applications using React.js and
+                Node.js and more specifically Nest.js. I work closely with
+                cross-functional teams to gather requirements, design solutions,
+                and implement features that meet user needs. My role involves
+                collaborating with designers and backend developers to ensure
+                seamless integration of frontend and backend components.
+              </Text>
+              <ul className=" text-white list-disc text-[18px] mt-4 px-4 font-poppins">
+                <li className="mb-2">
+                  Designed and developed the user/admin dashboard for the
+                  Meta1st app and contributed to building the Meta1st website.
+                </li>
+                <li className="mb-2">
+                  worked with MongoDB for managing user data, including profile
+                  images, storing and retrieving data, and implementing
+                </li>
+                <li className="mb-2">
+                  Developed a full-stack with nest js and MongoDB application
+                  using Express.js and Mongoose, for creating, retrieving,
+                  updating, and deleting data within a MongoDB database
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Panel 3 */}
+          <div className="panel3 flex w-full shrink-0 items-center justify-center">
+            <div
+              id="workCard3"
               className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
             >
               <Text className="text-[30px] font-semibold mob:text-[23px]">
@@ -249,6 +336,29 @@ const Experience = () => {
               </ul>
             </div>
           </div>
+
+          {/* Panel 4 */}
+          {/* <div className="panel4 flex w-full shrink-0 items-center justify-center">
+            <div
+              id="workCard4"
+              className="bg-[#161A1D] rounded-[10px] max-w-[765px] mx-auto border border-white p-6"
+            >
+              <Text className="text-[30px] font-semibold mob:text-[23px]">
+                Open Source Contributor{" "}
+                <span className="text-[#33BECF]">
+                  <Link href="https://github.com/your-github"> @GitHub</Link>
+                </span>
+              </Text>
+              <Text className="text-[20px] font-semibold text-[#B8B9B9] mt-1">
+                Ongoing
+              </Text>
+              <Text className="mt-3 text-[18px]">
+                Contributing to frontend libraries and tools in the React
+                ecosystem. Improving documentation, fixing bugs, and adding
+                animations/UI features.
+              </Text>
+            </div>
+          </div> */}
         </div>
       </div>
 
